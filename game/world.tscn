@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://planet/planet.tscn" type="PackedScene" id=2]
+
+[node name="world" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+
+transform/pos = Vector2( 766.901, 295.433 )
+
+[node name="planet" parent="." instance=ExtResource( 2 )]
+
+editor/display_folded = true
+transform/pos = Vector2( 491.119, 292.869 )
+
+
+[editable path="planet"]
