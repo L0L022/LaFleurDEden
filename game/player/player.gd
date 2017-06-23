@@ -9,6 +9,7 @@ var gravity = Vector2()
 var gravity_speed = 80
 
 var ground_normal = Vector2()
+var heart = preload("res://heart/heart.tscn")
 
 var camera = null
 var shape = null
@@ -16,6 +17,8 @@ var smoke = null
 var stars = null
 var shooting_star = null
 var light = null
+
+var can_shoot = true
 
 func _ready():
 	camera = get_node("camera")
@@ -55,6 +58,14 @@ func _fixed_process(delta):
 		rotate(2*delta)
 	
 	apply_impulse(Vector2(), velocity.rotated(get_rot()))
+	
+	if can_shoot and Input.is_action_pressed("ui_accept"):
+		can_shoot = false
+		var h = heart.instance()
+		get_tree().get_root().add_child(h)
+		h.add_collision_exception_with(self)
+		h.set_pos(get_pos())
+		h.apply_impulse(Vector2(), Vector2(0, -1).rotated(get_rot())*800)
 
 func update_gravity():
 	gravity = Vector2()
@@ -69,3 +80,6 @@ func update_ground():
 	else:
 		ground_normal = Vector2()
 	
+
+func _on_shoot_timer_timeout():
+	can_shoot = true

@@ -94,6 +94,7 @@ transform/pos = Vector2( 1528.68, 772.378 )
 
 [node name="planets" type="Node2D" parent="."]
 
+editor/display_folded = true
 __meta__ = {
 "_edit_lock_": true
 }
