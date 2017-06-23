@@ -1,41 +1,331 @@
-[gd_scene load_steps=49 format=1]
+[gd_scene load_steps=99 format=1]
 
 [ext_resource path="res://world.gd" type="Script" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://planet/planet.tscn" type="PackedScene" id=3]
-[ext_resource path="res://art/Refuge.tex" type="Texture" id=4]
-[ext_resource path="res://art/desert.tex" type="Texture" id=5]
-[ext_resource path="res://art/jardin.tex" type="Texture" id=6]
-[ext_resource path="res://art/neige.tex" type="Texture" id=7]
-[ext_resource path="res://art/riviere.tex" type="Texture" id=8]
-[ext_resource path="res://art/neutre.tex" type="Texture" id=9]
-[ext_resource path="res://art/asteroide.tex" type="Texture" id=10]
-[ext_resource path="res://art/asteroide1.tex" type="Texture" id=11]
-[ext_resource path="res://art/asteroide2.tex" type="Texture" id=12]
-[ext_resource path="res://art/montagne.tex" type="Texture" id=13]
-[ext_resource path="res://art/pyramide.tex" type="Texture" id=14]
-[ext_resource path="res://art/fleurs3.tex" type="Texture" id=15]
-[ext_resource path="res://art/fleurs2.tex" type="Texture" id=16]
-[ext_resource path="res://art/fleurs.tex" type="Texture" id=17]
-[ext_resource path="res://art/fleurs1.tex" type="Texture" id=18]
-[ext_resource path="res://art/cactus.tex" type="Texture" id=19]
-[ext_resource path="res://art/herbeshautes.tex" type="Texture" id=20]
-[ext_resource path="res://art/herbeshautes1.tex" type="Texture" id=21]
-[ext_resource path="res://art/lac.tex" type="Texture" id=22]
-[ext_resource path="res://art/lacgele.tex" type="Texture" id=23]
-[ext_resource path="res://art/palmier.tex" type="Texture" id=24]
-[ext_resource path="res://art/palmier1.tex" type="Texture" id=25]
-[ext_resource path="res://art/pierre1.tex" type="Texture" id=26]
-[ext_resource path="res://art/pierre2.tex" type="Texture" id=27]
-[ext_resource path="res://art/pont.tex" type="Texture" id=28]
-[ext_resource path="res://art/quenouille.tex" type="Texture" id=29]
-[ext_resource path="res://art/sapin.tex" type="Texture" id=30]
-[ext_resource path="res://art/sapin1.tex" type="Texture" id=31]
-[ext_resource path="res://art/terre.tex" type="Texture" id=32]
-[ext_resource path="res://art/arbre.tex" type="Texture" id=33]
-[ext_resource path="res://art/arbre1.tex" type="Texture" id=34]
-[ext_resource path="res://art/bambou.tex" type="Texture" id=35]
-[ext_resource path="res://art/bonhommedeneige.tex" type="Texture" id=36]
+[ext_resource path="res://art/desert.smp" type="Sample" id=3]
+[ext_resource path="res://art/etoile.smp" type="Sample" id=4]
+[ext_resource path="res://art/fin.smp" type="Sample" id=5]
+[ext_resource path="res://art/fusee.smp" type="Sample" id=6]
+[ext_resource path="res://art/jardin.smp" type="Sample" id=7]
+[ext_resource path="res://art/jardin_zen.smp" type="Sample" id=8]
+[ext_resource path="res://art/jungle.smp" type="Sample" id=9]
+[ext_resource path="res://art/neige.smp" type="Sample" id=10]
+[ext_resource path="res://art/troploin.smp" type="Sample" id=11]
+[ext_resource path="res://planet/planet.tscn" type="PackedScene" id=12]
+[ext_resource path="res://art/Refuge.tex" type="Texture" id=13]
+[ext_resource path="res://art/desert.tex" type="Texture" id=14]
+[ext_resource path="res://art/jardin.tex" type="Texture" id=15]
+[ext_resource path="res://art/neige.tex" type="Texture" id=16]
+[ext_resource path="res://art/riviere.tex" type="Texture" id=17]
+[ext_resource path="res://art/neutre.tex" type="Texture" id=18]
+[ext_resource path="res://art/fleurs3.tex" type="Texture" id=19]
+[ext_resource path="res://art/fleurs2.tex" type="Texture" id=20]
+[ext_resource path="res://art/fleurs.tex" type="Texture" id=21]
+[ext_resource path="res://art/fleurs1.tex" type="Texture" id=22]
+[ext_resource path="res://art/cactus.tex" type="Texture" id=23]
+[ext_resource path="res://art/herbeshautes.tex" type="Texture" id=24]
+[ext_resource path="res://art/herbeshautes1.tex" type="Texture" id=25]
+[ext_resource path="res://art/lac.tex" type="Texture" id=26]
+[ext_resource path="res://art/lacgele.tex" type="Texture" id=27]
+[ext_resource path="res://art/palmier.tex" type="Texture" id=28]
+[ext_resource path="res://art/palmier1.tex" type="Texture" id=29]
+[ext_resource path="res://art/pierre1.tex" type="Texture" id=30]
+[ext_resource path="res://art/pierre2.tex" type="Texture" id=31]
+[ext_resource path="res://art/pont.tex" type="Texture" id=32]
+[ext_resource path="res://art/quenouille.tex" type="Texture" id=33]
+[ext_resource path="res://art/sapin.tex" type="Texture" id=34]
+[ext_resource path="res://art/sapin1.tex" type="Texture" id=35]
+[ext_resource path="res://art/terre.tex" type="Texture" id=36]
+[ext_resource path="res://art/arbre.tex" type="Texture" id=37]
+[ext_resource path="res://art/arbre1.tex" type="Texture" id=38]
+[ext_resource path="res://art/bambou.tex" type="Texture" id=39]
+[ext_resource path="res://art/bonhommedeneige.tex" type="Texture" id=40]
+[ext_resource path="res://art/asteroide.tex" type="Texture" id=41]
+[ext_resource path="res://art/asteroide1.tex" type="Texture" id=42]
+[ext_resource path="res://art/asteroide2.tex" type="Texture" id=43]
+[ext_resource path="res://art/montagne.tex" type="Texture" id=44]
+[ext_resource path="res://art/pyramide.tex" type="Texture" id=45]
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 395.636, -100.365, -228.914, -470.861, -91.301, -1063.65, 1062.53, -873.113, 2205.77, -449.689 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2205.77, -449.689, 2237.53, 757.068, 1380.1, 926.438, 512.078, 746.483, 395.636, -100.365 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2205.77, -449.689, 1062.53, -873.113, 1983.48, -788.428 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 353.294, 291.302, 279.195, 1244.01, -345.355, 2207.3, -916.978, 1455.72, -853.464, -470.861, -186.571, -460.275, 289.781, -185.049 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -1922.61, 1042.88, -1859.1, -449.689, -1605.04, -1254.19, -1044, -1148.34, -853.464, -470.861, -916.978, 1455.72 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2790.63, -5.09434, -2589.5, -470.861, -1859.1, -449.689, -1922.61, 1042.88 )
+
+[sub_resource type="ConvexPolygonShape2D" id=19]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3063.21, 196.032, 3857.13, -15.68, 4227.62, 524.185, 3507.8, 1212.25, 2671.54, 1349.86, 2237.53, 788.825 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3063.21, 196.032, 2237.53, 788.825, 2258.7, -79.1935, 2840.91, -163.878 )
+
+[sub_resource type="ConvexPolygonShape2D" id=21]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 2582.92, -547.117, 2443.15, -1022.34, 2694.74, -1413.69, 3225.87, -1339.15, 3463.48, -1031.65, 3109.39, -551.776 )
+
+[sub_resource type="ConvexPolygonShape2D" id=22]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 4268.07, -37.099, 4807.61, -283.412, 5077.38, 220.943, 4948.36, 1710.55, 4209.42, 596.277 )
+
+[sub_resource type="ConvexPolygonShape2D" id=23]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1124.64, -975.434, 491.267, -1116.18, 620.289, -1972.42, 1945.69, -1667.46, 1652.46, -975.434 )
+
+[sub_resource type="ConvexPolygonShape2D" id=24]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 151.121, 1475.97, 491.267, 772.215, 1335.77, 995.07, 1593.81, 1640.18, 1699.37, 2519.87, -95.1924, 2555.05 )
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3881, -37.099, 3118.61, 162.297, 2790.19, -377.245, 3505.67, -1034.08, 3787.17, -494.537 )
+
+[sub_resource type="ConvexPolygonShape2D" id=26]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -470.526, -1385.96, -177.297, -881.601, -353.235, -447.621, -857.59, -494.537, -1127.36, -1374.23, -1045.26, -1726.1 )
+
+[sub_resource type="ConvexPolygonShape2D" id=27]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -2065.7, -1749.56, -1045.26, -1726.1, -1127.36, -1374.23, -2429.3, -1163.1, -3226.89, -1444.6 )
+
+[sub_resource type="ConvexPolygonShape2D" id=28]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3625.68, -306.87, -3226.89, -1444.6, -2429.3, -1163.1, -2534.86, -564.913, -2769.45, -37.099, -3367.64, 783.944 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3367.64, 783.944, -2769.45, -37.099, -2722.53, 103.651 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3109.59, 1569.8, -3367.64, 783.944, -2722.53, 103.651, -2194.72, 795.674, -1584.8, 2203.18 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -1584.8, 2203.18, -2194.72, 795.674, -1490.97, 1253.11 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -95.1924, 2555.05, -1584.8, 2203.18, -1490.97, 1253.11, -951.423, 1475.97, -353.235, 2203.18 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -95.1924, 2555.05, -353.235, 2203.18, 151.121, 1475.97 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 1699.37, 2519.87, 1593.81, 1640.18, 2156.81, 1933.41 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3705.07, 2191.45, 1699.37, 2519.87, 2156.81, 1933.41 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3705.07, 2191.45, 2156.81, 1933.41, 2461.77, 1393.86, 3599.5, 1194.47, 4948.36, 1710.55 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 4948.36, 1710.55, 3599.5, 1194.47, 4209.42, 596.277 )
+
+[sub_resource type="ConvexPolygonShape2D" id=38]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 4268.07, -37.099, 4209.42, 596.277, 3881, -37.099, 3787.17, -494.537 )
+
+[sub_resource type="ConvexPolygonShape2D" id=39]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3951.38, -1069.27, 3787.17, -494.537, 3505.67, -1034.08, 3892.73, -1644 )
+
+[sub_resource type="ConvexPolygonShape2D" id=40]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3892.73, -1644, 3505.67, -1034.08, 3036.5, -1432.87, 3435.29, -2183.54 )
+
+[sub_resource type="ConvexPolygonShape2D" id=41]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 620.289, -1972.42, 3435.29, -2183.54, 3036.5, -1432.87, 1945.69, -1667.46 )
+
+[sub_resource type="ConvexPolygonShape2D" id=42]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 12021, 1458.85, 4956.65, 1659.7, 5111.84, 237.065, 12409.5, -6088.05 )
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 12409.5, -6088.05, 5111.84, 237.065, 4742.02, -1422.27 )
+
+[sub_resource type="ConvexPolygonShape2D" id=44]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 4988.34, 1721.16, 12021.2, 1463.88, 12621.8, 7669.83, -10001.8, 8012.85, 2243.71, 2495.28 )
+
+[sub_resource type="ConvexPolygonShape2D" id=45]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -904.664, 2413.18, 2243.71, 2495.28, -10001.8, 8012.85 )
+
+[sub_resource type="ConvexPolygonShape2D" id=46]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3180.13, 1556.95, -904.664, 2413.18, -10001.8, 8012.85 )
+
+[sub_resource type="ConvexPolygonShape2D" id=47]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3180.13, 1556.95, -10001.8, 8012.85, -9983.71, -5696.96, -3719.67, -378.367 )
+
+[sub_resource type="ConvexPolygonShape2D" id=48]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -3098.02, -1609.93, -3719.67, -378.367, -9983.71, -5696.96 )
+
+[sub_resource type="ConvexPolygonShape2D" id=49]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -553.365, -1839.14, -3098.02, -1609.93, -9983.71, -5696.96, 12409.5, -6088.05, 3339.92, -2271.2 )
+
+[sub_resource type="ConvexPolygonShape2D" id=50]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 3339.92, -2271.2, 12409.5, -6088.05, 4742.02, -1422.27 )
+
+[sub_resource type="SampleLibrary" id=51]
+
+samples/desert = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 3 )
+}
+samples/etoile = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
+samples/fin = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 5 )
+}
+samples/fusee = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 6 )
+}
+samples/jardin = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 7 )
+}
+samples/jardin_zen = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 8 )
+}
+samples/jungle = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 9 )
+}
+samples/neige = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 10 )
+}
+samples/troploin = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 11 )
+}
+
+[sub_resource type="Animation" id=52]
+
+resource/name = "low"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("song_player:default/volume_db")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -888.0 ]
+}
+
+[sub_resource type="Animation" id=53]
+
+resource/name = "up"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("song_player:default/volume_db")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ -82.0, 0.0 ]
+}
 
 [sub_resource type="GDScript" id=1]
 
@@ -115,30 +405,272 @@ __meta__ = {
 
 transform/pos = Vector2( 400.52, 239.988 )
 
+[node name="sounds" type="Node2D" parent="."]
+
+[node name="jungle" type="Area2D" parent="sounds"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 13 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 14 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 15 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sounds/jungle"]
+
+build_mode = 0
+polygon = Vector2Array( 2237.53, 757.068, 1380.1, 926.438, 512.078, 746.483, 395.636, -100.365, -228.914, -470.861, -91.301, -1063.65, 1062.53, -873.113, 1983.48, -788.428, 2205.77, -449.689 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
+[node name="desert" type="Area2D" parent="sounds"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 16 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 17 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 18 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sounds/desert"]
+
+build_mode = 0
+polygon = Vector2Array( -345.355, 2207.3, -916.978, 1455.72, -1922.61, 1042.88, -2790.63, -5.09434, -2589.5, -470.861, -1859.1, -449.689, -1605.04, -1254.19, -1044, -1148.34, -853.464, -470.861, -186.571, -460.275, 289.781, -185.049, 353.294, 291.302, 279.195, 1244.01 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
+[node name="garden" type="Area2D" parent="sounds"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 19 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 20 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sounds/garden"]
+
+build_mode = 0
+polygon = Vector2Array( 3507.8, 1212.25, 2671.54, 1349.86, 2237.53, 788.825, 2258.7, -79.1935, 2840.91, -163.878, 3063.21, 196.032, 3857.13, -15.68, 4227.62, 524.185 )
+shape_range = Vector2( 0, 1 )
+trigger = false
+
+[node name="garden_zen" type="Area2D" parent="sounds"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 21 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sounds/garden_zen"]
+
+build_mode = 0
+polygon = Vector2Array( 3109.39, -551.776, 3463.48, -1031.65, 3225.87, -1339.15, 2694.74, -1413.69, 2443.15, -1022.34, 2582.92, -547.117 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="snow" type="Area2D" parent="sounds"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 22 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 23 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 24 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 25 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 26 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 27 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 28 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 29 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 30 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
+shapes/9/shape = SubResource( 31 )
+shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/9/trigger = false
+shapes/10/shape = SubResource( 32 )
+shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/10/trigger = false
+shapes/11/shape = SubResource( 33 )
+shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/11/trigger = false
+shapes/12/shape = SubResource( 34 )
+shapes/12/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/12/trigger = false
+shapes/13/shape = SubResource( 35 )
+shapes/13/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/13/trigger = false
+shapes/14/shape = SubResource( 36 )
+shapes/14/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/14/trigger = false
+shapes/15/shape = SubResource( 37 )
+shapes/15/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/15/trigger = false
+shapes/16/shape = SubResource( 38 )
+shapes/16/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/16/trigger = false
+shapes/17/shape = SubResource( 39 )
+shapes/17/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/17/trigger = false
+shapes/18/shape = SubResource( 40 )
+shapes/18/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/18/trigger = false
+shapes/19/shape = SubResource( 41 )
+shapes/19/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/19/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sounds/snow"]
+
+build_mode = 0
+polygon = Vector2Array( 491.267, -1116.18, 1124.64, -975.434, 1652.46, -975.434, 1945.69, -1667.46, 3036.5, -1432.87, 3505.67, -1034.08, 2790.19, -377.245, 3118.61, 162.297, 3881, -37.099, 4209.42, 596.277, 3599.5, 1194.47, 2461.77, 1393.86, 2156.81, 1933.41, 1593.81, 1640.18, 1335.77, 995.07, 491.267, 772.215, 151.121, 1475.97, -353.235, 2203.18, -951.423, 1475.97, -1490.97, 1253.11, -2194.72, 795.674, -2722.53, 103.651, -2769.45, -37.099, -2534.86, -564.913, -2429.3, -1163.1, -1127.36, -1374.23, -857.59, -494.537, -353.235, -447.621, -177.297, -881.601, -470.526, -1385.96, -1045.26, -1726.1, -2065.7, -1749.56, -3226.89, -1444.6, -3625.68, -306.87, -3367.64, 783.944, -3109.59, 1569.8, -1584.8, 2203.18, -95.1924, 2555.05, 1699.37, 2519.87, 3705.07, 2191.45, 4948.36, 1710.55, 5077.38, 220.943, 4807.61, -283.412, 4268.07, -37.099, 3787.17, -494.537, 3951.38, -1069.27, 3892.73, -1644, 3435.29, -2183.54, 620.289, -1972.42 )
+shape_range = Vector2( 0, 19 )
+trigger = false
+
+[node name="void" type="Area2D" parent="sounds"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 42 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 43 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 44 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/2/trigger = false
+shapes/3/shape = SubResource( 45 )
+shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/3/trigger = false
+shapes/4/shape = SubResource( 46 )
+shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/4/trigger = false
+shapes/5/shape = SubResource( 47 )
+shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/5/trigger = false
+shapes/6/shape = SubResource( 48 )
+shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/6/trigger = false
+shapes/7/shape = SubResource( 49 )
+shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/7/trigger = false
+shapes/8/shape = SubResource( 50 )
+shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/8/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="sounds/void"]
+
+build_mode = 0
+polygon = Vector2Array( 4988.34, 1721.16, 2243.71, 2495.28, -904.664, 2413.18, -3180.13, 1556.95, -3719.67, -378.367, -3098.02, -1609.93, -553.365, -1839.14, 3339.92, -2271.2, 4742.02, -1422.27, 5111.84, 237.065, 4956.65, 1659.7, 12021, 1458.85, 12409.5, -6088.05, -9983.71, -5696.96, -10001.8, 8012.85, 12621.8, 7669.83, 12021.2, 1463.88 )
+shape_range = Vector2( 0, 8 )
+trigger = false
+
+[node name="song_player" type="SamplePlayer" parent="sounds"]
+
+config/polyphony = 1
+config/samples = SubResource( 51 )
+default/volume_db = -80.0
+default/pitch_scale = 1.0
+default/pan = 0.0
+default/depth = 0.0
+default/height = 0.0
+default/filter/type = 0
+default/filter/cutoff = 5000.0
+default/filter/resonance = 1.0
+default/filter/gain = 1.0
+default/reverb_room = 1
+default/reverb_send = 0.0
+default/chorus_send = 0.0
+
+[node name="song_anim" type="AnimationPlayer" parent="sounds"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/low = SubResource( 52 )
+anims/up = SubResource( 53 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
 [node name="planets" type="Node2D" parent="."]
 
 editor/display_folded = true
+z/z = 5
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="refuge" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2891.87, -957.632 )
 
 [node name="sprite" type="Sprite" parent="planets/refuge"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 4 )
+texture = ExtResource( 13 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2009.7, 1553.37 )
 script/script = SubResource( 1 )
@@ -146,14 +678,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert7" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -370.146, 1669.83 )
 script/script = SubResource( 1 )
@@ -161,14 +693,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert7"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert8" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2121.78, -1145.33 )
 transform/rot = 112.528
@@ -177,14 +709,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert8"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert2" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -125.512, 970.094 )
 script/script = SubResource( 1 )
@@ -192,14 +724,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert2"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert9" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4288.68, -480.131 )
 transform/rot = -104.946
@@ -208,14 +740,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert9"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert3" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -965.076, 0.382996 )
 transform/rot = 75.0
@@ -224,14 +756,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert3"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert5" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1739.12, 567.665 )
 transform/rot = -21.7402
@@ -240,14 +772,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert5"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert6" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -2291.6, -140.44 )
 transform/rot = 75.0
@@ -256,14 +788,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert6"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert4" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1357.4, -716.752 )
 script/script = SubResource( 1 )
@@ -271,14 +803,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert4"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="desert1" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -36.7802, 25.0656 )
 script/script = SubResource( 1 )
@@ -286,14 +818,14 @@ script/script = SubResource( 1 )
 [node name="sprite" type="Sprite" parent="planets/desert1"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="jardin" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1894.55, 380.601 )
 transform/rot = -144.047
@@ -302,14 +834,14 @@ script/script = SubResource( 2 )
 [node name="sprite" type="Sprite" parent="planets/jardin"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+texture = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="jardin3" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4329.23, -1238.99 )
 script/script = SubResource( 2 )
@@ -317,14 +849,14 @@ script/script = SubResource( 2 )
 [node name="sprite" type="Sprite" parent="planets/jardin3"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+texture = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="jardin1" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 886.807, 279.193 )
 script/script = SubResource( 2 )
@@ -332,14 +864,14 @@ script/script = SubResource( 2 )
 [node name="sprite" type="Sprite" parent="planets/jardin1"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+texture = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="jardin2" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -932.193, 786.231 )
 transform/rot = 114.704
@@ -348,14 +880,14 @@ script/script = SubResource( 2 )
 [node name="sprite" type="Sprite" parent="planets/jardin2"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 6 )
+texture = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 573.553, 1460.56 )
 transform/rot = -117.947
@@ -364,14 +896,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige10" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1349.54, 1995.13 )
 transform/rot = -91.9197
@@ -380,14 +912,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige10"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige11" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2754.92, 1701.98 )
 script/script = SubResource( 3 )
@@ -395,14 +927,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige11"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige13" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4345.09, 1421.7 )
 transform/rot = -121.308
@@ -411,14 +943,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige13"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige14" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4608.21, 266.253 )
 script/script = SubResource( 3 )
@@ -426,14 +958,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige14"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige9" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 3375.71, -255.22 )
 transform/rot = 131.096
@@ -442,14 +974,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige9"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige16" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1150.62, -1387.78 )
 script/script = SubResource( 3 )
@@ -457,14 +989,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige16"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige15" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 3444.35, -1605.15 )
 transform/rot = 118.542
@@ -473,14 +1005,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige15"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige7" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -608.308, -790.209 )
 transform/rot = 98.0688
@@ -489,14 +1021,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige7"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige6" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -3018.56, -641.205 )
 script/script = SubResource( 3 )
@@ -504,14 +1036,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige6"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige5" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -3009.3, 381.019 )
 transform/rot = 164.348
@@ -520,14 +1052,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige5"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige4" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1241.61, 1718.51 )
 script/script = SubResource( 3 )
@@ -535,14 +1067,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige4"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige1" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -2375.59, 1234.9 )
 transform/rot = -153.423
@@ -551,14 +1083,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige1"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 7 )
+texture = ExtResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="riviere" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 232.474, -644.625 )
 transform/rot = -144.582
@@ -567,14 +1099,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/riviere"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 8 )
+texture = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="riviere1" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1767.19, -480.806 )
 script/script = SubResource( 3 )
@@ -582,14 +1114,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/riviere1"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 8 )
+texture = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="riviere2" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2784.59, 941.827 )
 script/script = SubResource( 3 )
@@ -597,14 +1129,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/riviere2"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 8 )
+texture = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="riviere3" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4975.81, 3979.89 )
 script/script = SubResource( 3 )
@@ -612,14 +1144,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/riviere3"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 8 )
+texture = ExtResource( 17 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige2" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2569.64, 257.138 )
 script/script = SubResource( 3 )
@@ -627,14 +1159,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige2"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 9 )
+texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige12" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 3690.5, 524.421 )
 script/script = SubResource( 3 )
@@ -642,14 +1174,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige12"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 9 )
+texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige3" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 858.384, -452.716 )
 script/script = SubResource( 3 )
@@ -657,14 +1189,14 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige3"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 9 )
+texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="neige8" parent="planets" groups=[
 "asset_drop_1",
-] instance=ExtResource( 3 )]
+] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -2114.1, -810.659 )
 transform/rot = 76.4531
@@ -673,12 +1205,644 @@ script/script = SubResource( 3 )
 [node name="sprite" type="Sprite" parent="planets/neige8"]
 
 transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 9 )
+texture = ExtResource( 18 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide" type="StaticBody2D" parent="planets"]
+[node name="assets" type="Node2D" parent="."]
+
+editor/display_folded = true
+z/z = 5
+
+[node name="fleurs15" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 988.747, -1452.03 )
+transform/rot = 40.7478
+transform/scale = Vector2( 0.733925, 0.733925 )
+texture = ExtResource( 19 )
+
+[node name="fleurs14" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2240.1, -690.447 )
+transform/rot = 93.1519
+transform/scale = Vector2( 0.733925, 0.733925 )
+texture = ExtResource( 19 )
+
+[node name="fleurs5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1637.65, -378.103 )
+transform/rot = 152.254
+transform/scale = Vector2( 0.733925, 0.733925 )
+texture = ExtResource( 19 )
+
+[node name="fleurs4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1902.15, 225.946 )
+transform/scale = Vector2( 0.733925, 0.733925 )
+texture = ExtResource( 19 )
+
+[node name="fleurs12" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2105.26, -936.994 )
+transform/scale = Vector2( 0.61198, 0.61198 )
+texture = ExtResource( 20 )
+
+[node name="fleurs8" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4321.8, -1415.46 )
+transform/scale = Vector2( 0.61198, 0.61198 )
+texture = ExtResource( 20 )
+
+[node name="fleurs6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 731.315, -535.781 )
+transform/rot = 22.691
+transform/scale = Vector2( 0.61198, 0.61198 )
+texture = ExtResource( 20 )
+
+[node name="fleurs16" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 939.885, -1359.87 )
+transform/rot = 93.7251
+transform/scale = Vector2( 0.837281, 0.837281 )
+texture = ExtResource( 21 )
+
+[node name="fleurs13" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1967.7, -886.934 )
+transform/rot = -39.2439
+transform/scale = Vector2( 0.837281, 0.837281 )
+texture = ExtResource( 21 )
+
+[node name="fleurs9" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4450.98, -1343.24 )
+transform/rot = -74.1648
+transform/scale = Vector2( 0.837281, 0.837281 )
+texture = ExtResource( 21 )
+
+[node name="fleurs7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 280.162, -456.026 )
+transform/rot = 178.919
+transform/scale = Vector2( 0.837281, 0.837281 )
+texture = ExtResource( 21 )
+
+[node name="fleurs11" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4177.41, -1104.51 )
+transform/rot = 138.488
+transform/scale = Vector2( 0.55035, 0.55035 )
+texture = ExtResource( 22 )
+
+[node name="fleurs10" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4135.36, -1159.17 )
+transform/rot = 137.469
+transform/scale = Vector2( 0.55035, 0.55035 )
+texture = ExtResource( 22 )
+
+[node name="cactus3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -94.5779, -201.52 )
+transform/rot = 12.5041
+transform/scale = Vector2( 0.434877, 0.434877 )
+texture = ExtResource( 23 )
+
+[node name="cactus2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -831.96, 135.569 )
+transform/rot = -122.646
+transform/scale = Vector2( 0.434877, 0.434877 )
+texture = ExtResource( 23 )
+
+[node name="cactus1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -986.46, -180.452 )
+transform/scale = Vector2( 0.434877, 0.434877 )
+texture = ExtResource( 23 )
+
+[node name="herbeshautes2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1065.26, 819.86 )
+transform/rot = 97.5926
+texture = ExtResource( 24 )
+
+[node name="herbeshautes1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -143.906, 804.963 )
+transform/rot = 26.0891
+texture = ExtResource( 25 )
+
+[node name="herbeshautes7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -579.347, 1671.25 )
+transform/rot = 70.337
+texture = ExtResource( 25 )
+
+[node name="herbeshautes6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 79.7046, 0.401733 )
+transform/rot = -116.7
+texture = ExtResource( 25 )
+
+[node name="herbeshautes5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2420.37, -161.12 )
+transform/rot = 80.9458
+texture = ExtResource( 25 )
+
+[node name="herbeshautes4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3827.76, 370.407 )
+transform/rot = -38.1975
+texture = ExtResource( 25 )
+
+[node name="herbeshautes3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -814.802, 697.807 )
+transform/rot = -38.6116
+texture = ExtResource( 25 )
+
+[node name="lac7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2100.85, -1204.08 )
+transform/scale = Vector2( 0.709977, 0.709977 )
+texture = ExtResource( 26 )
+
+[node name="lac5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1995.56, 1597.69 )
+transform/scale = Vector2( 0.611131, 0.611131 )
+texture = ExtResource( 26 )
+
+[node name="lac4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1677.36, 614.798 )
+transform/rot = -160.174
+transform/scale = Vector2( 0.709977, 0.709977 )
+texture = ExtResource( 26 )
+
+[node name="lac3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1386.96, -761.365 )
+transform/scale = Vector2( 0.501738, 0.501738 )
+texture = ExtResource( 26 )
+
+[node name="lac2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3715.76, 466.686 )
+transform/rot = -84.8807
+transform/scale = Vector2( 0.842643, 0.842643 )
+texture = ExtResource( 26 )
+
+[node name="lac1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2523.26, 258.99 )
+transform/rot = -17.6536
+transform/scale = Vector2( 0.709977, 0.709977 )
+texture = ExtResource( 26 )
+
+[node name="lacgele" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 836.663, -488.354 )
+transform/rot = 22.679
+transform/scale = Vector2( 0.723561, 0.723561 )
+texture = ExtResource( 27 )
+
+[node name="lacgele5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -640.898, -767.963 )
+transform/rot = 22.679
+transform/scale = Vector2( 0.61623, 0.61623 )
+texture = ExtResource( 27 )
+
+[node name="lacgele4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4513.44, 243.669 )
+transform/rot = 69.4552
+transform/scale = Vector2( 0.723561, 0.723561 )
+texture = ExtResource( 27 )
+
+[node name="lacgele3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1273.6, 1708.45 )
+transform/rot = 51.7501
+transform/scale = Vector2( 0.723561, 0.723561 )
+texture = ExtResource( 27 )
+
+[node name="lacgele2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2680.56, 1678.1 )
+transform/rot = 54.1087
+transform/scale = Vector2( 0.723561, 0.723561 )
+texture = ExtResource( 27 )
+
+[node name="palmier" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 5071.28, 3810.12 )
+transform/rot = -20.0719
+transform/scale = Vector2( 0.460951, 0.460951 )
+texture = ExtResource( 28 )
+
+[node name="palmier5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2270.75, 1537.16 )
+transform/rot = -40.319
+transform/scale = Vector2( 0.594713, 0.594713 )
+texture = ExtResource( 28 )
+
+[node name="palmier4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1459.77, 461.881 )
+transform/rot = -61.0667
+transform/scale = Vector2( 0.594713, 0.594713 )
+texture = ExtResource( 28 )
+
+[node name="palmier2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1343.02, -946.972 )
+transform/scale = Vector2( 0.594713, 0.594713 )
+texture = ExtResource( 28 )
+
+[node name="palmier7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1982.93, -1371.1 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 29 )
+flip_h = true
+
+[node name="palmier6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 5042.27, 4174.28 )
+transform/rot = 158.634
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 29 )
+flip_h = true
+
+[node name="palmier3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1535.44, 798.908 )
+transform/rot = -118.395
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 29 )
+
+[node name="pierre16" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4288.82, -662.073 )
+texture = ExtResource( 30 )
+
+[node name="pierre14" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4668.3, 233.496 )
+transform/rot = -57.8297
+texture = ExtResource( 30 )
+
+[node name="pierre12" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2418.78, 1168.67 )
+transform/rot = 68.368
+texture = ExtResource( 30 )
+
+[node name="pierre10" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1226.43, 1971.51 )
+transform/rot = 104.324
+texture = ExtResource( 30 )
+
+[node name="pierre8" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -253.44, 1039.23 )
+transform/rot = 104.355
+texture = ExtResource( 30 )
+
+[node name="pierre6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2316.45, -243.148 )
+texture = ExtResource( 30 )
+
+[node name="pierre3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2763.32, 791.329 )
+texture = ExtResource( 30 )
+
+[node name="pierre17" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4380.19, -647.572 )
+texture = ExtResource( 31 )
+
+[node name="pierre15" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1128.07, -1558.32 )
+texture = ExtResource( 31 )
+
+[node name="pierre13" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2385.9, 1337.1 )
+transform/rot = 177.814
+texture = ExtResource( 31 )
+
+[node name="pierre11" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1295.04, 2058.11 )
+transform/rot = 136.388
+texture = ExtResource( 31 )
+
+[node name="pierre9" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -174.502, 1105.32 )
+transform/rot = -179.318
+texture = ExtResource( 31 )
+
+[node name="pierre7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2211.99, -167.537 )
+transform/rot = -26.9591
+texture = ExtResource( 31 )
+
+[node name="pierre5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2828.13, 1044.9 )
+texture = ExtResource( 31 )
+
+[node name="pierre4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2873.67, 802.034 )
+texture = ExtResource( 31 )
+
+[node name="pont" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3029.48, -1122.83 )
+transform/scale = Vector2( 0.826807, 0.826807 )
+texture = ExtResource( 32 )
+
+[node name="pont3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4789.9, 3837.61 )
+transform/rot = 95.6777
+transform/scale = Vector2( 0.826807, 0.826807 )
+texture = ExtResource( 32 )
+
+[node name="pont2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2616.24, 809.248 )
+transform/rot = 86.917
+transform/scale = Vector2( 0.826807, 0.826807 )
+texture = ExtResource( 32 )
+
+[node name="quenouille7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1738.32, 425.67 )
+transform/rot = 26.2343
+texture = ExtResource( 33 )
+
+[node name="quenouille6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3796.54, 318.355 )
+transform/rot = -15.0251
+texture = ExtResource( 33 )
+
+[node name="quenouille5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3577.9, 587.458 )
+transform/rot = 166.747
+texture = ExtResource( 33 )
+
+[node name="quenouille4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3527.44, 503.364 )
+transform/rot = 116.367
+texture = ExtResource( 33 )
+
+[node name="quenouille3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2905.73, 871.141 )
+transform/rot = -16.8995
+texture = ExtResource( 33 )
+
+[node name="quenouille2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1854.32, -409.73 )
+texture = ExtResource( 33 )
+
+[node name="quenouille1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 1751.58, -622.067 )
+texture = ExtResource( 33 )
+
+[node name="sapin14" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -3229.01, -782.24 )
+transform/rot = 33.5401
+transform/scale = Vector2( 0.698083, 0.698083 )
+texture = ExtResource( 34 )
+
+[node name="sapin13" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3233.55, -1454.38 )
+transform/rot = 136.657
+transform/scale = Vector2( 0.698083, 0.698083 )
+texture = ExtResource( 34 )
+
+[node name="sapin10" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4649, 44.5576 )
+transform/rot = -10.7555
+transform/scale = Vector2( 0.698083, 0.698083 )
+texture = ExtResource( 34 )
+
+[node name="sapin7" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2189.99, 1063.88 )
+transform/rot = -47.9282
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2155.04, 1137.45 )
+transform/rot = -60.2275
+transform/scale = Vector2( 0.698083, 0.698083 )
+texture = ExtResource( 34 )
+
+[node name="sapin4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2363.75, 959.1 )
+transform/scale = Vector2( 0.698083, 0.698083 )
+texture = ExtResource( 34 )
+
+[node name="sapin2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 383.67, 1323.4 )
+transform/rot = 65.554
+transform/scale = Vector2( 0.698083, 0.698083 )
+texture = ExtResource( 34 )
+
+[node name="sapin16" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -3207.87, -647.339 )
+transform/rot = 100.068
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin15" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -3226.78, -528.722 )
+transform/rot = 108.083
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin12" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3505.98, -1877.07 )
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin11" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3293.47, -1793.59 )
+transform/rot = 18.7305
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin9" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4443.29, 1215.68 )
+transform/rot = -25.1828
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin8" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2482.19, 995.579 )
+transform/rot = 20.7857
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2265.89, 987.989 )
+transform/rot = -16.1835
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="sapin3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 546.047, 1253.62 )
+transform/scale = Vector2( 0.672278, 0.672278 )
+texture = ExtResource( 35 )
+
+[node name="terre5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 4363.98, -548.514 )
+transform/rot = -239.13
+transform/scale = Vector2( 0.71366, 0.71366 )
+texture = ExtResource( 36 )
+
+[node name="terre4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -52.5735, 928.897 )
+transform/rot = -74.9214
+transform/scale = Vector2( 0.71366, 0.71366 )
+texture = ExtResource( 36 )
+
+[node name="terre3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -55.9462, -44.483 )
+transform/scale = Vector2( 0.71366, 0.71366 )
+texture = ExtResource( 36 )
+
+[node name="terre2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -933.124, 900.943 )
+transform/scale = Vector2( 0.71366, 0.71366 )
+texture = ExtResource( 36 )
+
+[node name="terre1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 865.188, 252.185 )
+transform/scale = Vector2( 0.71366, 0.71366 )
+texture = ExtResource( 36 )
+
+[node name="arbre6" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2320.95, -941.356 )
+transform/rot = 37.0786
+transform/scale = Vector2( 0.674979, 0.674979 )
+texture = ExtResource( 37 )
+
+[node name="arbre3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2826.51, 340.273 )
+transform/rot = -109.601
+transform/scale = Vector2( 0.674979, 0.674979 )
+texture = ExtResource( 37 )
+
+[node name="arbre5" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 622.685, 402.239 )
+transform/rot = 124.597
+transform/scale = Vector2( 0.660547, 0.660547 )
+texture = ExtResource( 38 )
+
+[node name="arbre4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 88.4178, -864.933 )
+transform/rot = 9.4334
+transform/scale = Vector2( 0.660547, 0.660547 )
+texture = ExtResource( 38 )
+
+[node name="arbre2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2611.44, -14.2195 )
+transform/rot = -7.96458
+transform/scale = Vector2( 0.660547, 0.660547 )
+texture = ExtResource( 38 )
+
+[node name="bambou2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 986.693, -331.512 )
+transform/rot = -137.582
+transform/scale = Vector2( 0.813614, 0.813614 )
+texture = ExtResource( 39 )
+
+[node name="bambou1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2890.81, -1243.82 )
+transform/scale = Vector2( 0.813614, 0.813614 )
+texture = ExtResource( 39 )
+
+[node name="bonhommedeneige4" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2808.84, 380.032 )
+transform/rot = -60.1021
+transform/scale = Vector2( 0.682919, 0.682919 )
+texture = ExtResource( 40 )
+flip_h = true
+
+[node name="bonhommedeneige3" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -2840.04, 507.895 )
+transform/rot = -122.08
+transform/scale = Vector2( 0.682919, 0.682919 )
+texture = ExtResource( 40 )
+
+[node name="bonhommedeneige2" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3502.35, -69.5028 )
+transform/rot = -127.523
+transform/scale = Vector2( 0.682919, 0.682919 )
+texture = ExtResource( 40 )
+
+[node name="bonhommedeneige1" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( -1453.63, 1729.22 )
+transform/rot = 93.9362
+transform/scale = Vector2( 0.682919, 0.682919 )
+texture = ExtResource( 40 )
+
+[node name="asteroide" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -2327.42, -1404.55 )
@@ -696,14 +1860,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide"]
+[node name="sprite" type="Sprite" parent="assets/asteroide"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -713,7 +1877,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide30" type="StaticBody2D" parent="planets"]
+[node name="asteroide30" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -1452.78, -1550.33 )
@@ -731,14 +1895,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide30"]
+[node name="sprite" type="Sprite" parent="assets/asteroide30"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide30"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide30"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -748,11 +1912,11 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide31" type="StaticBody2D" parent="planets"]
+[node name="asteroide31" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -546.444, -1696.1 )
-transform/rot = 180.0
+transform/rot = -180.0
 input/pickable = false
 shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -767,14 +1931,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide31"]
+[node name="sprite" type="Sprite" parent="assets/asteroide31"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide31"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide31"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -784,7 +1948,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide4" type="StaticBody2D" parent="planets"]
+[node name="asteroide4" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -550.543, 2369.29 )
@@ -802,14 +1966,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide4"]
+[node name="sprite" type="Sprite" parent="assets/asteroide4"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide4"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide4"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -819,7 +1983,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide12" type="StaticBody2D" parent="planets"]
+[node name="asteroide12" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 379.313, 2126.49 )
@@ -837,14 +2001,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide12"]
+[node name="sprite" type="Sprite" parent="assets/asteroide12"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide12"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide12"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -854,7 +2018,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide10" type="StaticBody2D" parent="planets"]
+[node name="asteroide10" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -2203.43, 1979.77 )
@@ -872,14 +2036,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide10"]
+[node name="sprite" type="Sprite" parent="assets/asteroide10"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide10"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide10"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -889,11 +2053,11 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide7" type="StaticBody2D" parent="planets"]
+[node name="asteroide7" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 2482.73, -457.532 )
-transform/rot = 200.0
+transform/rot = -160.0
 input/pickable = false
 shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -908,14 +2072,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide7"]
+[node name="sprite" type="Sprite" parent="assets/asteroide7"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide7"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide7"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -925,7 +2089,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide27" type="StaticBody2D" parent="planets"]
+[node name="asteroide27" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 2678.9, -1913.31 )
@@ -943,14 +2107,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide27"]
+[node name="sprite" type="Sprite" parent="assets/asteroide27"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide27"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide27"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -960,7 +2124,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide6" type="StaticBody2D" parent="planets"]
+[node name="asteroide6" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3425.63, -1176.71 )
@@ -979,14 +2143,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide6"]
+[node name="sprite" type="Sprite" parent="assets/asteroide6"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide6"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide6"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -996,7 +2160,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide3" type="StaticBody2D" parent="planets"]
+[node name="asteroide3" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 745.569, 789.785 )
@@ -1014,14 +2178,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide3"]
+[node name="sprite" type="Sprite" parent="assets/asteroide3"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide3"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide3"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1031,7 +2195,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide16" type="StaticBody2D" parent="planets"]
+[node name="asteroide16" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 3428.26, 2311.31 )
@@ -1049,14 +2213,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide16"]
+[node name="sprite" type="Sprite" parent="assets/asteroide16"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide16"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide16"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1066,7 +2230,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide20" type="StaticBody2D" parent="planets"]
+[node name="asteroide20" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 4299.78, 2093.43 )
@@ -1084,14 +2248,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide20"]
+[node name="sprite" type="Sprite" parent="assets/asteroide20"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide20"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide20"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1101,11 +2265,12 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide22" type="StaticBody2D" parent="planets"]
+[node name="asteroide22" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 5052.42, 853.034 )
 transform/rot = 10.0
+transform/scale = Vector2( 1, 1 )
 input/pickable = false
 shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
@@ -1120,14 +2285,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide22"]
+[node name="sprite" type="Sprite" parent="assets/asteroide22"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide22"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide22"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1137,7 +2302,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide23" type="StaticBody2D" parent="planets"]
+[node name="asteroide23" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 5109.75, -360.259 )
@@ -1155,14 +2320,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide23"]
+[node name="sprite" type="Sprite" parent="assets/asteroide23"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide23"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide23"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1172,7 +2337,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide26" type="StaticBody2D" parent="planets"]
+[node name="asteroide26" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 1841.99, -1821.2 )
@@ -1190,14 +2355,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide26"]
+[node name="sprite" type="Sprite" parent="assets/asteroide26"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide26"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide26"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1207,7 +2372,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide17" type="StaticBody2D" parent="planets"]
+[node name="asteroide17" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 3845.82, 2906.19 )
@@ -1226,14 +2391,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide17"]
+[node name="sprite" type="Sprite" parent="assets/asteroide17"]
 
-texture = ExtResource( 10 )
+texture = ExtResource( 41 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide17"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide17"]
 
 build_mode = 0
 polygon = Vector2Array( -86.4994, -52.339, -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625, -102.789, 127.666, -117.451, 87.7554 )
@@ -1243,7 +2408,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide1" type="StaticBody2D" parent="planets"]
+[node name="asteroide1" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3606.83, -274.071 )
@@ -1262,14 +2427,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide1"]
+[node name="sprite" type="Sprite" parent="assets/asteroide1"]
 
-texture = ExtResource( 11 )
+texture = ExtResource( 42 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide1"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide1"]
 
 build_mode = 0
 polygon = Vector2Array( 44.5876, 93.4569, 106.49, 24.4648, 73.9098, -91.1945, 21.847, -111.778, -44.1716, -60.2832, -106.328, -24.656, -101.684, 43.6759 )
@@ -1279,7 +2444,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide5" type="StaticBody2D" parent="planets"]
+[node name="asteroide5" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3466.77, 1328.89 )
@@ -1297,14 +2462,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide5"]
+[node name="sprite" type="Sprite" parent="assets/asteroide5"]
 
-texture = ExtResource( 11 )
+texture = ExtResource( 42 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide5"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide5"]
 
 build_mode = 0
 polygon = Vector2Array( 44.5876, 93.4569, 106.49, 24.4648, 73.9098, -91.1945, 21.847, -111.778, -44.1716, -60.2832, -106.328, -24.656, -101.684, 43.6759 )
@@ -1314,7 +2479,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide9" type="StaticBody2D" parent="planets"]
+[node name="asteroide9" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3802.21, 108.235 )
@@ -1332,14 +2497,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide9"]
+[node name="sprite" type="Sprite" parent="assets/asteroide9"]
 
-texture = ExtResource( 11 )
+texture = ExtResource( 42 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide9"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide9"]
 
 build_mode = 0
 polygon = Vector2Array( 44.5876, 93.4569, 106.49, 24.4648, 73.9098, -91.1945, 21.847, -111.778, -44.1716, -60.2832, -106.328, -24.656, -101.684, 43.6759 )
@@ -1349,7 +2514,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide2" type="StaticBody2D" parent="planets"]
+[node name="asteroide2" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 1327.25, 1262.73 )
@@ -1364,14 +2529,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide2"]
+[node name="sprite" type="Sprite" parent="assets/asteroide2"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide2"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1381,7 +2546,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide18" type="StaticBody2D" parent="planets"]
+[node name="asteroide18" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 4318.83, 3487.82 )
@@ -1396,14 +2561,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide18"]
+[node name="sprite" type="Sprite" parent="assets/asteroide18"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide18"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide18"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1413,7 +2578,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide19" type="StaticBody2D" parent="planets"]
+[node name="asteroide19" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 2809.24, 2468.46 )
@@ -1428,14 +2593,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide19"]
+[node name="sprite" type="Sprite" parent="assets/asteroide19"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide19"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide19"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1445,7 +2610,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide21" type="StaticBody2D" parent="planets"]
+[node name="asteroide21" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 5057.21, 1661.93 )
@@ -1460,14 +2625,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide21"]
+[node name="sprite" type="Sprite" parent="assets/asteroide21"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide21"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide21"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1477,7 +2642,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide24" type="StaticBody2D" parent="planets"]
+[node name="asteroide24" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 4990.1, -1006.99 )
@@ -1492,14 +2657,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide24"]
+[node name="sprite" type="Sprite" parent="assets/asteroide24"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide24"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide24"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1509,7 +2674,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide25" type="StaticBody2D" parent="planets"]
+[node name="asteroide25" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 3962.8, -1610.98 )
@@ -1524,14 +2689,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide25"]
+[node name="sprite" type="Sprite" parent="assets/asteroide25"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide25"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide25"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1541,7 +2706,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide13" type="StaticBody2D" parent="planets"]
+[node name="asteroide13" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 2190.98, 2132.17 )
@@ -1556,14 +2721,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide13"]
+[node name="sprite" type="Sprite" parent="assets/asteroide13"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide13"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide13"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1573,7 +2738,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide15" type="StaticBody2D" parent="planets"]
+[node name="asteroide15" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 1790.58, 2452.49 )
@@ -1589,14 +2754,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide15"]
+[node name="sprite" type="Sprite" parent="assets/asteroide15"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide15"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide15"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1606,7 +2771,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide32" type="StaticBody2D" parent="planets"]
+[node name="asteroide32" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -283.328, 1622.59 )
@@ -1623,14 +2788,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide32"]
+[node name="sprite" type="Sprite" parent="assets/asteroide32"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide32"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide32"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1640,7 +2805,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide14" type="StaticBody2D" parent="planets"]
+[node name="asteroide14" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 1046.97, 2572.61 )
@@ -1655,14 +2820,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide14"]
+[node name="sprite" type="Sprite" parent="assets/asteroide14"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide14"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide14"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1672,7 +2837,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide28" type="StaticBody2D" parent="planets"]
+[node name="asteroide28" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 45.5712, -1375.95 )
@@ -1687,14 +2852,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide28"]
+[node name="sprite" type="Sprite" parent="assets/asteroide28"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide28"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide28"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1704,7 +2869,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide29" type="StaticBody2D" parent="planets"]
+[node name="asteroide29" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 482.892, -1566.09 )
@@ -1719,14 +2884,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide29"]
+[node name="sprite" type="Sprite" parent="assets/asteroide29"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide29"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide29"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1736,7 +2901,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide11" type="StaticBody2D" parent="planets"]
+[node name="asteroide11" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3061.94, 1757.49 )
@@ -1751,14 +2916,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide11"]
+[node name="sprite" type="Sprite" parent="assets/asteroide11"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide11"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide11"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1768,7 +2933,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="asteroide8" type="StaticBody2D" parent="planets"]
+[node name="asteroide8" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3610.28, 847.753 )
@@ -1783,14 +2948,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/asteroide8"]
+[node name="sprite" type="Sprite" parent="assets/asteroide8"]
 
-texture = ExtResource( 12 )
+texture = ExtResource( 43 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/asteroide8"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/asteroide8"]
 
 build_mode = 0
 polygon = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
@@ -1800,7 +2965,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne7" type="StaticBody2D" parent="planets"]
+[node name="montagne7" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3167.1, -464.731 )
@@ -1824,14 +2989,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne7"]
+[node name="sprite" type="Sprite" parent="assets/montagne7"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne7"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne7"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -1841,7 +3006,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne6" type="StaticBody2D" parent="planets"]
+[node name="montagne6" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -3121.19, -856.042 )
@@ -1865,14 +3030,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne6"]
+[node name="sprite" type="Sprite" parent="assets/montagne6"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne6"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne6"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -1882,7 +3047,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne5" type="StaticBody2D" parent="planets"]
+[node name="montagne5" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -415.752, -634.127 )
@@ -1906,14 +3071,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne5"]
+[node name="sprite" type="Sprite" parent="assets/montagne5"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne5"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne5"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -1923,7 +3088,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne4" type="StaticBody2D" parent="planets"]
+[node name="montagne4" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 4073.47, 1415.05 )
@@ -1947,14 +3112,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne4"]
+[node name="sprite" type="Sprite" parent="assets/montagne4"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne4"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne4"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -1964,7 +3129,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne3" type="StaticBody2D" parent="planets"]
+[node name="montagne3" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 4194.91, 1232.91 )
@@ -1988,14 +3153,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne3"]
+[node name="sprite" type="Sprite" parent="assets/montagne3"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne3"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne3"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -2005,7 +3170,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne2" type="StaticBody2D" parent="planets"]
+[node name="montagne2" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 1515.79, 1786.94 )
@@ -2029,14 +3194,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne2"]
+[node name="sprite" type="Sprite" parent="assets/montagne2"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne2"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -2046,7 +3211,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="montagne1" type="StaticBody2D" parent="planets"]
+[node name="montagne1" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 1398.15, 1730.02 )
@@ -2070,14 +3235,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/montagne1"]
+[node name="sprite" type="Sprite" parent="assets/montagne1"]
 
-texture = ExtResource( 13 )
+texture = ExtResource( 44 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/montagne1"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/montagne1"]
 
 build_mode = 0
 polygon = Vector2Array( 13.2932, -198.102, 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -158.181, -22.1149, -88.9897, -23.619, -88.9897, -73.2562 )
@@ -2087,7 +3252,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pyramide" type="StaticBody2D" parent="planets"]
+[node name="pyramide" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 2001.73, 1286.8 )
@@ -2104,14 +3269,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/pyramide"]
+[node name="sprite" type="Sprite" parent="assets/pyramide"]
 
-texture = ExtResource( 14 )
+texture = ExtResource( 45 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/pyramide"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/pyramide"]
 
 build_mode = 0
 polygon = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
@@ -2121,7 +3286,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pyramide3" type="StaticBody2D" parent="planets"]
+[node name="pyramide3" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( 4012.13, -446.912 )
@@ -2139,14 +3304,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/pyramide3"]
+[node name="sprite" type="Sprite" parent="assets/pyramide3"]
 
-texture = ExtResource( 14 )
+texture = ExtResource( 45 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/pyramide3"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/pyramide3"]
 
 build_mode = 0
 polygon = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
@@ -2156,7 +3321,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pyramide1" type="StaticBody2D" parent="planets"]
+[node name="pyramide1" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -1111.93, 223.188 )
@@ -2174,14 +3339,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/pyramide1"]
+[node name="sprite" type="Sprite" parent="assets/pyramide1"]
 
-texture = ExtResource( 14 )
+texture = ExtResource( 45 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/pyramide1"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/pyramide1"]
 
 build_mode = 0
 polygon = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
@@ -2191,7 +3356,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="pyramide2" type="StaticBody2D" parent="planets"]
+[node name="pyramide2" type="StaticBody2D" parent="assets"]
 
 editor/display_folded = true
 transform/pos = Vector2( -466.326, 1416.33 )
@@ -2209,14 +3374,14 @@ constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
 
-[node name="sprite" type="Sprite" parent="planets/pyramide2"]
+[node name="sprite" type="Sprite" parent="assets/pyramide2"]
 
-texture = ExtResource( 14 )
+texture = ExtResource( 45 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="planets/pyramide2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="assets/pyramide2"]
 
 build_mode = 0
 polygon = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
@@ -2226,633 +3391,16 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="assets" type="Node2D" parent="."]
+[connection signal="body_enter" from="sounds/jungle" to="." method="_on_jungle_body_enter"]
 
-[node name="fleurs15" type="Sprite" parent="assets"]
+[connection signal="body_enter" from="sounds/desert" to="." method="_on_desert_body_enter"]
 
-transform/pos = Vector2( 988.747, -1452.03 )
-transform/rot = 40.7478
-transform/scale = Vector2( 0.733925, 0.733925 )
-texture = ExtResource( 15 )
+[connection signal="body_enter" from="sounds/garden" to="." method="_on_garden_body_enter"]
 
-[node name="fleurs14" type="Sprite" parent="assets"]
+[connection signal="body_enter" from="sounds/garden_zen" to="." method="_on_garden_zen_body_enter"]
 
-transform/pos = Vector2( -2240.1, -690.447 )
-transform/rot = 93.1519
-transform/scale = Vector2( 0.733925, 0.733925 )
-texture = ExtResource( 15 )
+[connection signal="body_enter" from="sounds/snow" to="." method="_on_snow_body_enter"]
 
-[node name="fleurs5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1637.65, -378.103 )
-transform/rot = 152.254
-transform/scale = Vector2( 0.733925, 0.733925 )
-texture = ExtResource( 15 )
-
-[node name="fleurs4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1902.15, 225.946 )
-transform/scale = Vector2( 0.733925, 0.733925 )
-texture = ExtResource( 15 )
-
-[node name="fleurs12" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2105.26, -936.994 )
-transform/scale = Vector2( 0.61198, 0.61198 )
-texture = ExtResource( 16 )
-
-[node name="fleurs8" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4321.8, -1415.46 )
-transform/scale = Vector2( 0.61198, 0.61198 )
-texture = ExtResource( 16 )
-
-[node name="fleurs6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 731.315, -535.781 )
-transform/rot = 22.691
-transform/scale = Vector2( 0.61198, 0.61198 )
-texture = ExtResource( 16 )
-
-[node name="fleurs16" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 939.885, -1359.87 )
-transform/rot = 93.7251
-transform/scale = Vector2( 0.837281, 0.837281 )
-texture = ExtResource( 17 )
-
-[node name="fleurs13" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1967.7, -886.934 )
-transform/rot = -39.2439
-transform/scale = Vector2( 0.837281, 0.837281 )
-texture = ExtResource( 17 )
-
-[node name="fleurs9" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4450.98, -1343.24 )
-transform/rot = -74.1648
-transform/scale = Vector2( 0.837281, 0.837281 )
-texture = ExtResource( 17 )
-
-[node name="fleurs7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 280.162, -456.026 )
-transform/rot = 178.919
-transform/scale = Vector2( 0.837281, 0.837281 )
-texture = ExtResource( 17 )
-
-[node name="fleurs11" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4177.41, -1104.51 )
-transform/rot = 138.488
-transform/scale = Vector2( 0.55035, 0.55035 )
-texture = ExtResource( 18 )
-
-[node name="fleurs10" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4135.36, -1159.17 )
-transform/rot = 137.469
-transform/scale = Vector2( 0.55035, 0.55035 )
-texture = ExtResource( 18 )
-
-[node name="cactus3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -94.5779, -201.52 )
-transform/rot = 12.5041
-transform/scale = Vector2( 0.434877, 0.434877 )
-texture = ExtResource( 19 )
-
-[node name="cactus2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -831.96, 135.569 )
-transform/rot = -122.646
-transform/scale = Vector2( 0.434877, 0.434877 )
-texture = ExtResource( 19 )
-
-[node name="cactus1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -986.46, -180.452 )
-transform/scale = Vector2( 0.434877, 0.434877 )
-texture = ExtResource( 19 )
-
-[node name="herbeshautes2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1065.26, 819.86 )
-transform/rot = 97.5926
-texture = ExtResource( 20 )
-
-[node name="herbeshautes1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -143.906, 804.963 )
-transform/rot = 26.0891
-texture = ExtResource( 21 )
-
-[node name="herbeshautes7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -579.347, 1671.25 )
-transform/rot = 70.337
-texture = ExtResource( 21 )
-
-[node name="herbeshautes6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 79.7046, 0.401733 )
-transform/rot = -116.7
-texture = ExtResource( 21 )
-
-[node name="herbeshautes5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2420.37, -161.12 )
-transform/rot = 80.9458
-texture = ExtResource( 21 )
-
-[node name="herbeshautes4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3827.76, 370.407 )
-transform/rot = -38.1975
-texture = ExtResource( 21 )
-
-[node name="herbeshautes3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -814.802, 697.807 )
-transform/rot = -38.6116
-texture = ExtResource( 21 )
-
-[node name="lac7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2100.85, -1204.08 )
-transform/scale = Vector2( 0.709977, 0.709977 )
-texture = ExtResource( 22 )
-
-[node name="lac5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1995.56, 1597.69 )
-transform/scale = Vector2( 0.611131, 0.611131 )
-texture = ExtResource( 22 )
-
-[node name="lac4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1677.36, 614.798 )
-transform/rot = -160.174
-transform/scale = Vector2( 0.709977, 0.709977 )
-texture = ExtResource( 22 )
-
-[node name="lac3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1386.96, -761.365 )
-transform/scale = Vector2( 0.501738, 0.501738 )
-texture = ExtResource( 22 )
-
-[node name="lac2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3715.76, 466.686 )
-transform/rot = -84.8807
-transform/scale = Vector2( 0.842643, 0.842643 )
-texture = ExtResource( 22 )
-
-[node name="lac1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2523.26, 258.99 )
-transform/rot = -17.6536
-transform/scale = Vector2( 0.709977, 0.709977 )
-texture = ExtResource( 22 )
-
-[node name="lacgele" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 836.663, -488.354 )
-transform/rot = 22.679
-transform/scale = Vector2( 0.723561, 0.723561 )
-texture = ExtResource( 23 )
-
-[node name="lacgele5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -640.898, -767.963 )
-transform/rot = 22.679
-transform/scale = Vector2( 0.61623, 0.61623 )
-texture = ExtResource( 23 )
-
-[node name="lacgele4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4513.44, 243.669 )
-transform/rot = 69.4552
-transform/scale = Vector2( 0.723561, 0.723561 )
-texture = ExtResource( 23 )
-
-[node name="lacgele3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1273.6, 1708.45 )
-transform/rot = 51.7501
-transform/scale = Vector2( 0.723561, 0.723561 )
-texture = ExtResource( 23 )
-
-[node name="lacgele2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2680.56, 1678.1 )
-transform/rot = 54.1087
-transform/scale = Vector2( 0.723561, 0.723561 )
-texture = ExtResource( 23 )
-
-[node name="palmier" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 5071.28, 3810.12 )
-transform/rot = -20.0719
-transform/scale = Vector2( 0.460951, 0.460951 )
-texture = ExtResource( 24 )
-
-[node name="palmier5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2270.75, 1537.16 )
-transform/rot = -40.319
-transform/scale = Vector2( 0.594713, 0.594713 )
-texture = ExtResource( 24 )
-
-[node name="palmier4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1459.77, 461.881 )
-transform/rot = -61.0667
-transform/scale = Vector2( 0.594713, 0.594713 )
-texture = ExtResource( 24 )
-
-[node name="palmier2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1343.02, -946.972 )
-transform/scale = Vector2( 0.594713, 0.594713 )
-texture = ExtResource( 24 )
-
-[node name="palmier7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1982.93, -1371.1 )
-transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 25 )
-flip_h = true
-
-[node name="palmier6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 5042.27, 4174.28 )
-transform/rot = 158.634
-transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 25 )
-flip_h = true
-
-[node name="palmier3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1535.44, 798.908 )
-transform/rot = -118.395
-transform/scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 25 )
-
-[node name="pierre16" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4288.82, -662.073 )
-texture = ExtResource( 26 )
-
-[node name="pierre14" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4668.3, 233.496 )
-transform/rot = -57.8297
-texture = ExtResource( 26 )
-
-[node name="pierre12" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2418.78, 1168.67 )
-transform/rot = 68.368
-texture = ExtResource( 26 )
-
-[node name="pierre10" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1226.43, 1971.51 )
-transform/rot = 104.324
-texture = ExtResource( 26 )
-
-[node name="pierre8" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -253.44, 1039.23 )
-transform/rot = 104.355
-texture = ExtResource( 26 )
-
-[node name="pierre6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2316.45, -243.148 )
-texture = ExtResource( 26 )
-
-[node name="pierre3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2763.32, 791.329 )
-texture = ExtResource( 26 )
-
-[node name="pierre17" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4380.19, -647.572 )
-texture = ExtResource( 27 )
-
-[node name="pierre15" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1128.07, -1558.32 )
-texture = ExtResource( 27 )
-
-[node name="pierre13" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2385.9, 1337.1 )
-transform/rot = 177.814
-texture = ExtResource( 27 )
-
-[node name="pierre11" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1295.04, 2058.11 )
-transform/rot = 136.388
-texture = ExtResource( 27 )
-
-[node name="pierre9" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -174.502, 1105.32 )
-transform/rot = -179.318
-texture = ExtResource( 27 )
-
-[node name="pierre7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2211.99, -167.537 )
-transform/rot = -26.9591
-texture = ExtResource( 27 )
-
-[node name="pierre5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2828.13, 1044.9 )
-texture = ExtResource( 27 )
-
-[node name="pierre4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2873.67, 802.034 )
-texture = ExtResource( 27 )
-
-[node name="pont" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3029.48, -1122.83 )
-transform/scale = Vector2( 0.826807, 0.826807 )
-texture = ExtResource( 28 )
-
-[node name="pont3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4789.9, 3837.61 )
-transform/rot = 95.6777
-transform/scale = Vector2( 0.826807, 0.826807 )
-texture = ExtResource( 28 )
-
-[node name="pont2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2616.24, 809.248 )
-transform/rot = 86.917
-transform/scale = Vector2( 0.826807, 0.826807 )
-texture = ExtResource( 28 )
-
-[node name="quenouille7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1738.32, 425.67 )
-transform/rot = 26.2343
-texture = ExtResource( 29 )
-
-[node name="quenouille6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3796.54, 318.355 )
-transform/rot = -15.0251
-texture = ExtResource( 29 )
-
-[node name="quenouille5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3577.9, 587.458 )
-transform/rot = 166.747
-texture = ExtResource( 29 )
-
-[node name="quenouille4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3527.44, 503.364 )
-transform/rot = 116.367
-texture = ExtResource( 29 )
-
-[node name="quenouille3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2905.73, 871.141 )
-transform/rot = -16.8995
-texture = ExtResource( 29 )
-
-[node name="quenouille2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1854.32, -409.73 )
-texture = ExtResource( 29 )
-
-[node name="quenouille1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 1751.58, -622.067 )
-texture = ExtResource( 29 )
-
-[node name="sapin14" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -3229.01, -782.24 )
-transform/rot = 33.5401
-transform/scale = Vector2( 0.698083, 0.698083 )
-texture = ExtResource( 30 )
-
-[node name="sapin13" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3233.55, -1454.38 )
-transform/rot = 136.657
-transform/scale = Vector2( 0.698083, 0.698083 )
-texture = ExtResource( 30 )
-
-[node name="sapin10" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4649, 44.5576 )
-transform/rot = -10.7555
-transform/scale = Vector2( 0.698083, 0.698083 )
-texture = ExtResource( 30 )
-
-[node name="sapin7" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2189.99, 1063.88 )
-transform/rot = -47.9282
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2155.04, 1137.45 )
-transform/rot = -60.2275
-transform/scale = Vector2( 0.698083, 0.698083 )
-texture = ExtResource( 30 )
-
-[node name="sapin4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2363.75, 959.1 )
-transform/scale = Vector2( 0.698083, 0.698083 )
-texture = ExtResource( 30 )
-
-[node name="sapin2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 383.67, 1323.4 )
-transform/rot = 65.554
-transform/scale = Vector2( 0.698083, 0.698083 )
-texture = ExtResource( 30 )
-
-[node name="sapin16" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -3207.87, -647.339 )
-transform/rot = 100.068
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin15" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -3226.78, -528.722 )
-transform/rot = 108.083
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin12" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3505.98, -1877.07 )
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin11" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3293.47, -1793.59 )
-transform/rot = 18.7305
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin9" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4443.29, 1215.68 )
-transform/rot = -25.1828
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin8" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2482.19, 995.579 )
-transform/rot = 20.7857
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2265.89, 987.989 )
-transform/rot = -16.1835
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="sapin3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 546.047, 1253.62 )
-transform/scale = Vector2( 0.672278, 0.672278 )
-texture = ExtResource( 31 )
-
-[node name="terre5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 4363.98, -548.514 )
-transform/rot = -239.13
-transform/scale = Vector2( 0.71366, 0.71366 )
-texture = ExtResource( 32 )
-
-[node name="terre4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -52.5735, 928.897 )
-transform/rot = -74.9214
-transform/scale = Vector2( 0.71366, 0.71366 )
-texture = ExtResource( 32 )
-
-[node name="terre3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -55.9462, -44.483 )
-transform/scale = Vector2( 0.71366, 0.71366 )
-texture = ExtResource( 32 )
-
-[node name="terre2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -933.124, 900.943 )
-transform/scale = Vector2( 0.71366, 0.71366 )
-texture = ExtResource( 32 )
-
-[node name="terre1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 865.188, 252.185 )
-transform/scale = Vector2( 0.71366, 0.71366 )
-texture = ExtResource( 32 )
-
-[node name="arbre6" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2320.95, -941.356 )
-transform/rot = 37.0786
-transform/scale = Vector2( 0.674979, 0.674979 )
-texture = ExtResource( 33 )
-
-[node name="arbre3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2826.51, 340.273 )
-transform/rot = -109.601
-transform/scale = Vector2( 0.674979, 0.674979 )
-texture = ExtResource( 33 )
-
-[node name="arbre5" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 622.685, 402.239 )
-transform/rot = 124.597
-transform/scale = Vector2( 0.660547, 0.660547 )
-texture = ExtResource( 34 )
-
-[node name="arbre4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 88.4178, -864.933 )
-transform/rot = 9.4334
-transform/scale = Vector2( 0.660547, 0.660547 )
-texture = ExtResource( 34 )
-
-[node name="arbre2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2611.44, -14.2195 )
-transform/rot = -7.96458
-transform/scale = Vector2( 0.660547, 0.660547 )
-texture = ExtResource( 34 )
-
-[node name="bambou2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 986.693, -331.512 )
-transform/rot = -137.582
-transform/scale = Vector2( 0.813614, 0.813614 )
-texture = ExtResource( 35 )
-
-[node name="bambou1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 2890.81, -1243.82 )
-transform/scale = Vector2( 0.813614, 0.813614 )
-texture = ExtResource( 35 )
-
-[node name="bonhommedeneige4" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2808.84, 380.032 )
-transform/rot = -60.1021
-transform/scale = Vector2( 0.682919, 0.682919 )
-texture = ExtResource( 36 )
-flip_h = true
-
-[node name="bonhommedeneige3" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -2840.04, 507.895 )
-transform/rot = -122.08
-transform/scale = Vector2( 0.682919, 0.682919 )
-texture = ExtResource( 36 )
-
-[node name="bonhommedeneige2" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( 3502.35, -69.5028 )
-transform/rot = -127.523
-transform/scale = Vector2( 0.682919, 0.682919 )
-texture = ExtResource( 36 )
-
-[node name="bonhommedeneige1" type="Sprite" parent="assets"]
-
-transform/pos = Vector2( -1453.63, 1729.22 )
-transform/rot = 93.9362
-transform/scale = Vector2( 0.682919, 0.682919 )
-texture = ExtResource( 36 )
+[connection signal="body_enter" from="sounds/void" to="." method="_on_void_body_enter"]
 
 
