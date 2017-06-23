@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=1]
+[gd_scene load_steps=101 format=1]
 
 [ext_resource path="res://world.gd" type="Script" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
@@ -45,198 +45,200 @@
 [ext_resource path="res://art/asteroide2.tex" type="Texture" id=43]
 [ext_resource path="res://art/montagne.tex" type="Texture" id=44]
 [ext_resource path="res://art/pyramide.tex" type="Texture" id=45]
+[ext_resource path="res://star/star.tscn" type="PackedScene" id=46]
+[ext_resource path="res://neo/neo.tscn" type="PackedScene" id=47]
 
-[sub_resource type="ConvexPolygonShape2D" id=13]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 395.636, -100.365, -228.914, -470.861, -91.301, -1063.65, 1062.53, -873.113, 2205.77, -449.689 )
 
-[sub_resource type="ConvexPolygonShape2D" id=14]
+[sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2205.77, -449.689, 2237.53, 757.068, 1380.1, 926.438, 512.078, 746.483, 395.636, -100.365 )
 
-[sub_resource type="ConvexPolygonShape2D" id=15]
+[sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2205.77, -449.689, 1062.53, -873.113, 1983.48, -788.428 )
 
-[sub_resource type="ConvexPolygonShape2D" id=16]
+[sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 353.294, 291.302, 279.195, 1244.01, -345.355, 2207.3, -916.978, 1455.72, -853.464, -470.861, -186.571, -460.275, 289.781, -185.049 )
 
-[sub_resource type="ConvexPolygonShape2D" id=17]
+[sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -1922.61, 1042.88, -1859.1, -449.689, -1605.04, -1254.19, -1044, -1148.34, -853.464, -470.861, -916.978, 1455.72 )
 
-[sub_resource type="ConvexPolygonShape2D" id=18]
+[sub_resource type="ConvexPolygonShape2D" id=6]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -2790.63, -5.09434, -2589.5, -470.861, -1859.1, -449.689, -1922.61, 1042.88 )
 
-[sub_resource type="ConvexPolygonShape2D" id=19]
+[sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3063.21, 196.032, 3857.13, -15.68, 4227.62, 524.185, 3507.8, 1212.25, 2671.54, 1349.86, 2237.53, 788.825 )
 
-[sub_resource type="ConvexPolygonShape2D" id=20]
+[sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3063.21, 196.032, 2237.53, 788.825, 2258.7, -79.1935, 2840.91, -163.878 )
 
-[sub_resource type="ConvexPolygonShape2D" id=21]
+[sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2582.92, -547.117, 2443.15, -1022.34, 2694.74, -1413.69, 3225.87, -1339.15, 3463.48, -1031.65, 3109.39, -551.776 )
 
-[sub_resource type="ConvexPolygonShape2D" id=22]
+[sub_resource type="ConvexPolygonShape2D" id=10]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4268.07, -37.099, 4807.61, -283.412, 5077.38, 220.943, 4948.36, 1710.55, 4209.42, 596.277 )
 
-[sub_resource type="ConvexPolygonShape2D" id=23]
+[sub_resource type="ConvexPolygonShape2D" id=11]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 1124.64, -975.434, 491.267, -1116.18, 620.289, -1972.42, 1945.69, -1667.46, 1652.46, -975.434 )
 
-[sub_resource type="ConvexPolygonShape2D" id=24]
+[sub_resource type="ConvexPolygonShape2D" id=12]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 151.121, 1475.97, 491.267, 772.215, 1335.77, 995.07, 1593.81, 1640.18, 1699.37, 2519.87, -95.1924, 2555.05 )
 
-[sub_resource type="ConvexPolygonShape2D" id=25]
+[sub_resource type="ConvexPolygonShape2D" id=13]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3881, -37.099, 3118.61, 162.297, 2790.19, -377.245, 3505.67, -1034.08, 3787.17, -494.537 )
 
-[sub_resource type="ConvexPolygonShape2D" id=26]
+[sub_resource type="ConvexPolygonShape2D" id=14]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -470.526, -1385.96, -177.297, -881.601, -353.235, -447.621, -857.59, -494.537, -1127.36, -1374.23, -1045.26, -1726.1 )
 
-[sub_resource type="ConvexPolygonShape2D" id=27]
+[sub_resource type="ConvexPolygonShape2D" id=15]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -2065.7, -1749.56, -1045.26, -1726.1, -1127.36, -1374.23, -2429.3, -1163.1, -3226.89, -1444.6 )
 
-[sub_resource type="ConvexPolygonShape2D" id=28]
+[sub_resource type="ConvexPolygonShape2D" id=16]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3625.68, -306.87, -3226.89, -1444.6, -2429.3, -1163.1, -2534.86, -564.913, -2769.45, -37.099, -3367.64, 783.944 )
 
-[sub_resource type="ConvexPolygonShape2D" id=29]
+[sub_resource type="ConvexPolygonShape2D" id=17]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3367.64, 783.944, -2769.45, -37.099, -2722.53, 103.651 )
 
-[sub_resource type="ConvexPolygonShape2D" id=30]
+[sub_resource type="ConvexPolygonShape2D" id=18]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3109.59, 1569.8, -3367.64, 783.944, -2722.53, 103.651, -2194.72, 795.674, -1584.8, 2203.18 )
 
-[sub_resource type="ConvexPolygonShape2D" id=31]
+[sub_resource type="ConvexPolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -1584.8, 2203.18, -2194.72, 795.674, -1490.97, 1253.11 )
 
-[sub_resource type="ConvexPolygonShape2D" id=32]
+[sub_resource type="ConvexPolygonShape2D" id=20]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -95.1924, 2555.05, -1584.8, 2203.18, -1490.97, 1253.11, -951.423, 1475.97, -353.235, 2203.18 )
 
-[sub_resource type="ConvexPolygonShape2D" id=33]
+[sub_resource type="ConvexPolygonShape2D" id=21]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -95.1924, 2555.05, -353.235, 2203.18, 151.121, 1475.97 )
 
-[sub_resource type="ConvexPolygonShape2D" id=34]
+[sub_resource type="ConvexPolygonShape2D" id=22]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 1699.37, 2519.87, 1593.81, 1640.18, 2156.81, 1933.41 )
 
-[sub_resource type="ConvexPolygonShape2D" id=35]
+[sub_resource type="ConvexPolygonShape2D" id=23]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3705.07, 2191.45, 1699.37, 2519.87, 2156.81, 1933.41 )
 
-[sub_resource type="ConvexPolygonShape2D" id=36]
+[sub_resource type="ConvexPolygonShape2D" id=24]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3705.07, 2191.45, 2156.81, 1933.41, 2461.77, 1393.86, 3599.5, 1194.47, 4948.36, 1710.55 )
 
-[sub_resource type="ConvexPolygonShape2D" id=37]
+[sub_resource type="ConvexPolygonShape2D" id=25]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4948.36, 1710.55, 3599.5, 1194.47, 4209.42, 596.277 )
 
-[sub_resource type="ConvexPolygonShape2D" id=38]
+[sub_resource type="ConvexPolygonShape2D" id=26]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4268.07, -37.099, 4209.42, 596.277, 3881, -37.099, 3787.17, -494.537 )
 
-[sub_resource type="ConvexPolygonShape2D" id=39]
+[sub_resource type="ConvexPolygonShape2D" id=27]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3951.38, -1069.27, 3787.17, -494.537, 3505.67, -1034.08, 3892.73, -1644 )
 
-[sub_resource type="ConvexPolygonShape2D" id=40]
+[sub_resource type="ConvexPolygonShape2D" id=28]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3892.73, -1644, 3505.67, -1034.08, 3036.5, -1432.87, 3435.29, -2183.54 )
 
-[sub_resource type="ConvexPolygonShape2D" id=41]
+[sub_resource type="ConvexPolygonShape2D" id=29]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 620.289, -1972.42, 3435.29, -2183.54, 3036.5, -1432.87, 1945.69, -1667.46 )
 
-[sub_resource type="ConvexPolygonShape2D" id=42]
+[sub_resource type="ConvexPolygonShape2D" id=30]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 12021, 1458.85, 4956.65, 1659.7, 5111.84, 237.065, 12409.5, -6088.05 )
 
-[sub_resource type="ConvexPolygonShape2D" id=43]
+[sub_resource type="ConvexPolygonShape2D" id=31]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 12409.5, -6088.05, 5111.84, 237.065, 4742.02, -1422.27 )
 
-[sub_resource type="ConvexPolygonShape2D" id=44]
+[sub_resource type="ConvexPolygonShape2D" id=32]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4988.34, 1721.16, 12021.2, 1463.88, 12621.8, 7669.83, -10001.8, 8012.85, 2243.71, 2495.28 )
 
-[sub_resource type="ConvexPolygonShape2D" id=45]
+[sub_resource type="ConvexPolygonShape2D" id=33]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -904.664, 2413.18, 2243.71, 2495.28, -10001.8, 8012.85 )
 
-[sub_resource type="ConvexPolygonShape2D" id=46]
+[sub_resource type="ConvexPolygonShape2D" id=34]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3180.13, 1556.95, -904.664, 2413.18, -10001.8, 8012.85 )
 
-[sub_resource type="ConvexPolygonShape2D" id=47]
+[sub_resource type="ConvexPolygonShape2D" id=35]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3180.13, 1556.95, -10001.8, 8012.85, -9983.71, -5696.96, -3719.67, -378.367 )
 
-[sub_resource type="ConvexPolygonShape2D" id=48]
+[sub_resource type="ConvexPolygonShape2D" id=36]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3098.02, -1609.93, -3719.67, -378.367, -9983.71, -5696.96 )
 
-[sub_resource type="ConvexPolygonShape2D" id=49]
+[sub_resource type="ConvexPolygonShape2D" id=37]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -553.365, -1839.14, -3098.02, -1609.93, -9983.71, -5696.96, 12409.5, -6088.05, 3339.92, -2271.2 )
 
-[sub_resource type="ConvexPolygonShape2D" id=50]
+[sub_resource type="ConvexPolygonShape2D" id=38]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3339.92, -2271.2, 12409.5, -6088.05, 4742.02, -1422.27 )
 
-[sub_resource type="SampleLibrary" id=51]
+[sub_resource type="SampleLibrary" id=39]
 
 samples/desert = {
 "db": 0.0,
@@ -293,7 +295,7 @@ samples/troploin = {
 "sample": ExtResource( 11 )
 }
 
-[sub_resource type="Animation" id=52]
+[sub_resource type="Animation" id=40]
 
 resource/name = "low"
 length = 0.5
@@ -310,7 +312,7 @@ tracks/0/keys = {
 "values": [ 0.0, -888.0 ]
 }
 
-[sub_resource type="Animation" id=53]
+[sub_resource type="Animation" id=41]
 
 resource/name = "up"
 length = 0.5
@@ -327,68 +329,68 @@ tracks/0/keys = {
 "values": [ -82.0, 0.0 ]
 }
 
-[sub_resource type="GDScript" id=1]
+[sub_resource type="GDScript" id=42]
 
 script/source = "extends StaticBody2D
 
 onready var gravity_zone = get_node(\"gravity_zone/collision\").get_shape()
 "
 
-[sub_resource type="GDScript" id=2]
+[sub_resource type="GDScript" id=43]
 
 script/source = "extends StaticBody2D
 
 onready var gravity_zone = get_node(\"gravity_zone/collision\").get_shape()
 "
 
-[sub_resource type="GDScript" id=3]
+[sub_resource type="GDScript" id=44]
 
 script/source = "extends StaticBody2D
 
 onready var gravity_zone = get_node(\"gravity_zone/collision\").get_shape()
 "
 
-[sub_resource type="ConvexPolygonShape2D" id=4]
+[sub_resource type="ConvexPolygonShape2D" id=45]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
+[sub_resource type="ConvexPolygonShape2D" id=46]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -117.451, 87.7554, -86.4994, -52.339, -28.6697, -88.9916, -49.0323, 136.625, -102.789, 127.666 )
 
-[sub_resource type="ConvexPolygonShape2D" id=6]
+[sub_resource type="ConvexPolygonShape2D" id=47]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 106.49, 24.4648, 44.5876, 93.4569, -101.684, 43.6759, -106.328, -24.656, -44.1716, -60.2832, 73.9098, -91.1945 )
 
-[sub_resource type="ConvexPolygonShape2D" id=7]
+[sub_resource type="ConvexPolygonShape2D" id=48]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 73.9098, -91.1945, -44.1716, -60.2832, 21.847, -111.778 )
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
+[sub_resource type="ConvexPolygonShape2D" id=49]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
 
-[sub_resource type="ConvexPolygonShape2D" id=9]
+[sub_resource type="ConvexPolygonShape2D" id=50]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -88.9897, -73.2562, 13.2932, -198.102, 31.3433, -58.2147, -88.9897, -23.619 )
 
-[sub_resource type="ConvexPolygonShape2D" id=10]
+[sub_resource type="ConvexPolygonShape2D" id=51]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -88.9897, -23.619 )
 
-[sub_resource type="ConvexPolygonShape2D" id=11]
+[sub_resource type="ConvexPolygonShape2D" id=52]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -88.9897, -23.619, -219.852, 143.343, -158.181, -22.1149 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=53]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
@@ -407,17 +409,20 @@ transform/pos = Vector2( 400.52, 239.988 )
 
 [node name="sounds" type="Node2D" parent="."]
 
+editor/display_folded = true
+visibility/visible = false
+
 [node name="jungle" type="Area2D" parent="sounds"]
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 13 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 14 )
+shapes/1/shape = SubResource( 2 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 15 )
+shapes/2/shape = SubResource( 3 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -436,13 +441,13 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 16 )
+shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 17 )
+shapes/1/shape = SubResource( 5 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 18 )
+shapes/2/shape = SubResource( 6 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -461,10 +466,10 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 19 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 20 )
+shapes/1/shape = SubResource( 8 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -483,7 +488,7 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 21 )
+shapes/0/shape = SubResource( 9 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -502,64 +507,64 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 22 )
+shapes/0/shape = SubResource( 10 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 23 )
+shapes/1/shape = SubResource( 11 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 24 )
+shapes/2/shape = SubResource( 12 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 25 )
+shapes/3/shape = SubResource( 13 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 26 )
+shapes/4/shape = SubResource( 14 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 27 )
+shapes/5/shape = SubResource( 15 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 28 )
+shapes/6/shape = SubResource( 16 )
 shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 29 )
+shapes/7/shape = SubResource( 17 )
 shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 30 )
+shapes/8/shape = SubResource( 18 )
 shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 31 )
+shapes/9/shape = SubResource( 19 )
 shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 32 )
+shapes/10/shape = SubResource( 20 )
 shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/10/trigger = false
-shapes/11/shape = SubResource( 33 )
+shapes/11/shape = SubResource( 21 )
 shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/11/trigger = false
-shapes/12/shape = SubResource( 34 )
+shapes/12/shape = SubResource( 22 )
 shapes/12/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/12/trigger = false
-shapes/13/shape = SubResource( 35 )
+shapes/13/shape = SubResource( 23 )
 shapes/13/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/13/trigger = false
-shapes/14/shape = SubResource( 36 )
+shapes/14/shape = SubResource( 24 )
 shapes/14/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/14/trigger = false
-shapes/15/shape = SubResource( 37 )
+shapes/15/shape = SubResource( 25 )
 shapes/15/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/15/trigger = false
-shapes/16/shape = SubResource( 38 )
+shapes/16/shape = SubResource( 26 )
 shapes/16/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/16/trigger = false
-shapes/17/shape = SubResource( 39 )
+shapes/17/shape = SubResource( 27 )
 shapes/17/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/17/trigger = false
-shapes/18/shape = SubResource( 40 )
+shapes/18/shape = SubResource( 28 )
 shapes/18/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/18/trigger = false
-shapes/19/shape = SubResource( 41 )
+shapes/19/shape = SubResource( 29 )
 shapes/19/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/19/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -578,31 +583,31 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 42 )
+shapes/0/shape = SubResource( 30 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 43 )
+shapes/1/shape = SubResource( 31 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 44 )
+shapes/2/shape = SubResource( 32 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 45 )
+shapes/3/shape = SubResource( 33 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 46 )
+shapes/4/shape = SubResource( 34 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 47 )
+shapes/5/shape = SubResource( 35 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 48 )
+shapes/6/shape = SubResource( 36 )
 shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 49 )
+shapes/7/shape = SubResource( 37 )
 shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 50 )
+shapes/8/shape = SubResource( 38 )
 shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -620,7 +625,7 @@ trigger = false
 [node name="song_player" type="SamplePlayer" parent="sounds"]
 
 config/polyphony = 1
-config/samples = SubResource( 51 )
+config/samples = SubResource( 39 )
 default/volume_db = -80.0
 default/pitch_scale = 1.0
 default/pan = 0.0
@@ -639,8 +644,8 @@ default/chorus_send = 0.0
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/low = SubResource( 52 )
-anims/up = SubResource( 53 )
+anims/low = SubResource( 40 )
+anims/up = SubResource( 41 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -673,7 +678,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2009.7, 1553.37 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert"]
 
@@ -688,7 +693,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -370.146, 1669.83 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert7"]
 
@@ -704,7 +709,7 @@ __meta__ = {
 
 transform/pos = Vector2( 2121.78, -1145.33 )
 transform/rot = 112.528
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert8"]
 
@@ -719,7 +724,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -125.512, 970.094 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert2"]
 
@@ -735,7 +740,7 @@ __meta__ = {
 
 transform/pos = Vector2( 4288.68, -480.131 )
 transform/rot = -104.946
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert9"]
 
@@ -751,7 +756,7 @@ __meta__ = {
 
 transform/pos = Vector2( -965.076, 0.382996 )
 transform/rot = 75.0
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert3"]
 
@@ -767,7 +772,7 @@ __meta__ = {
 
 transform/pos = Vector2( -1739.12, 567.665 )
 transform/rot = -21.7402
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert5"]
 
@@ -783,7 +788,7 @@ __meta__ = {
 
 transform/pos = Vector2( -2291.6, -140.44 )
 transform/rot = 75.0
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert6"]
 
@@ -798,7 +803,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1357.4, -716.752 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert4"]
 
@@ -813,7 +818,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -36.7802, 25.0656 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert1"]
 
@@ -829,7 +834,7 @@ __meta__ = {
 
 transform/pos = Vector2( 1894.55, 380.601 )
 transform/rot = -144.047
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin"]
 
@@ -844,7 +849,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4329.23, -1238.99 )
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin3"]
 
@@ -859,7 +864,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 886.807, 279.193 )
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin1"]
 
@@ -875,7 +880,7 @@ __meta__ = {
 
 transform/pos = Vector2( -932.193, 786.231 )
 transform/rot = 114.704
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin2"]
 
@@ -891,7 +896,7 @@ __meta__ = {
 
 transform/pos = Vector2( 573.553, 1460.56 )
 transform/rot = -117.947
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige"]
 
@@ -907,7 +912,7 @@ __meta__ = {
 
 transform/pos = Vector2( 1349.54, 1995.13 )
 transform/rot = -91.9197
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige10"]
 
@@ -922,7 +927,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2754.92, 1701.98 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige11"]
 
@@ -938,7 +943,7 @@ __meta__ = {
 
 transform/pos = Vector2( 4345.09, 1421.7 )
 transform/rot = -121.308
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige13"]
 
@@ -953,7 +958,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4608.21, 266.253 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige14"]
 
@@ -969,7 +974,7 @@ __meta__ = {
 
 transform/pos = Vector2( 3375.71, -255.22 )
 transform/rot = 131.096
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige9"]
 
@@ -984,7 +989,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1150.62, -1387.78 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige16"]
 
@@ -1000,7 +1005,7 @@ __meta__ = {
 
 transform/pos = Vector2( 3444.35, -1605.15 )
 transform/rot = 118.542
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige15"]
 
@@ -1016,7 +1021,7 @@ __meta__ = {
 
 transform/pos = Vector2( -608.308, -790.209 )
 transform/rot = 98.0688
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige7"]
 
@@ -1031,7 +1036,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -3018.56, -641.205 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige6"]
 
@@ -1047,7 +1052,7 @@ __meta__ = {
 
 transform/pos = Vector2( -3009.3, 381.019 )
 transform/rot = 164.348
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige5"]
 
@@ -1062,7 +1067,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1241.61, 1718.51 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige4"]
 
@@ -1078,7 +1083,7 @@ __meta__ = {
 
 transform/pos = Vector2( -2375.59, 1234.9 )
 transform/rot = -153.423
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige1"]
 
@@ -1094,7 +1099,7 @@ __meta__ = {
 
 transform/pos = Vector2( 232.474, -644.625 )
 transform/rot = -144.582
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere"]
 
@@ -1109,7 +1114,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1767.19, -480.806 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere1"]
 
@@ -1124,7 +1129,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2784.59, 941.827 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere2"]
 
@@ -1139,7 +1144,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4975.81, 3979.89 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere3"]
 
@@ -1154,7 +1159,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2569.64, 257.138 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige2"]
 
@@ -1169,7 +1174,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 3690.5, 524.421 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige12"]
 
@@ -1184,7 +1189,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 858.384, -452.716 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige3"]
 
@@ -1200,7 +1205,7 @@ __meta__ = {
 
 transform/pos = Vector2( -2114.1, -810.659 )
 transform/rot = 76.4531
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige8"]
 
@@ -1212,7 +1217,6 @@ __meta__ = {
 
 [node name="assets" type="Node2D" parent="."]
 
-editor/display_folded = true
 z/z = 5
 
 [node name="fleurs15" type="Sprite" parent="assets"]
@@ -1631,6 +1635,18 @@ texture = ExtResource( 33 )
 transform/pos = Vector2( 1751.58, -622.067 )
 texture = ExtResource( 33 )
 
+[node name="quenouille8" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2780.84, -809.023 )
+transform/rot = 183.127
+texture = ExtResource( 33 )
+
+[node name="quenouille9" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2863.93, -849.225 )
+transform/rot = 180.72
+texture = ExtResource( 33 )
+
 [node name="sapin14" type="Sprite" parent="assets"]
 
 transform/pos = Vector2( -3229.01, -782.24 )
@@ -1749,7 +1765,7 @@ texture = ExtResource( 36 )
 
 [node name="terre3" type="Sprite" parent="assets"]
 
-transform/pos = Vector2( -55.9462, -44.483 )
+transform/pos = Vector2( -40.8728, -44.483 )
 transform/scale = Vector2( 0.71366, 0.71366 )
 texture = ExtResource( 36 )
 
@@ -1847,10 +1863,10 @@ texture = ExtResource( 40 )
 editor/display_folded = true
 transform/pos = Vector2( -2327.42, -1404.55 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1882,10 +1898,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -1452.78, -1550.33 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1918,10 +1934,10 @@ editor/display_folded = true
 transform/pos = Vector2( -546.444, -1696.1 )
 transform/rot = -180.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1953,10 +1969,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -550.543, 2369.29 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1988,10 +2004,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 379.313, 2126.49 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2023,10 +2039,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -2203.43, 1979.77 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2059,10 +2075,10 @@ editor/display_folded = true
 transform/pos = Vector2( 2482.73, -457.532 )
 transform/rot = -160.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2094,10 +2110,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 2678.9, -1913.31 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2130,10 +2146,10 @@ editor/display_folded = true
 transform/pos = Vector2( -3425.63, -1176.71 )
 transform/rot = 24.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2165,10 +2181,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 745.569, 789.785 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2200,10 +2216,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 3428.26, 2311.31 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2235,10 +2251,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 4299.78, 2093.43 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2270,12 +2286,11 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 5052.42, 853.034 )
 transform/rot = 10.0
-transform/scale = Vector2( 1, 1 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2307,10 +2322,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 5109.75, -360.259 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2342,10 +2357,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 1841.99, -1821.2 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2378,10 +2393,10 @@ editor/display_folded = true
 transform/pos = Vector2( 3845.82, 2906.19 )
 transform/rot = 150.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2414,10 +2429,10 @@ editor/display_folded = true
 transform/pos = Vector2( -3606.83, -274.071 )
 transform/rot = -90.0
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
+shapes/1/shape = SubResource( 48 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2449,10 +2464,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3466.77, 1328.89 )
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
+shapes/1/shape = SubResource( 48 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2484,10 +2499,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3802.21, 108.235 )
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
+shapes/1/shape = SubResource( 48 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2519,7 +2534,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 1327.25, 1262.73 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2551,7 +2566,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 4318.83, 3487.82 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2583,7 +2598,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 2809.24, 2468.46 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2615,7 +2630,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 5057.21, 1661.93 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2647,7 +2662,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 4990.1, -1006.99 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2679,7 +2694,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 3962.8, -1610.98 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2711,7 +2726,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 2190.98, 2132.17 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2744,7 +2759,7 @@ editor/display_folded = true
 transform/pos = Vector2( 1790.58, 2452.49 )
 transform/rot = 175.0
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2778,7 +2793,7 @@ transform/pos = Vector2( -283.328, 1622.59 )
 transform/rot = 175.0
 transform/scale = Vector2( 0.7346, 0.7346 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2810,7 +2825,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 1046.97, 2572.61 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2842,7 +2857,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 45.5712, -1375.95 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2874,7 +2889,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 482.892, -1566.09 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2906,7 +2921,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3061.94, 1757.49 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2938,7 +2953,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3610.28, 847.753 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2973,13 +2988,13 @@ transform/rot = 144.145
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3014,13 +3029,13 @@ transform/rot = 28.407
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3055,13 +3070,13 @@ transform/rot = -124.063
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3096,13 +3111,13 @@ transform/rot = 95.4592
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3137,13 +3152,13 @@ transform/rot = 49.9066
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3178,13 +3193,13 @@ transform/rot = -39.0105
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3219,13 +3234,13 @@ transform/rot = -6.33721
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3259,7 +3274,7 @@ transform/pos = Vector2( 2001.73, 1286.8 )
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3294,7 +3309,7 @@ transform/rot = 96.8514
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3329,7 +3344,7 @@ transform/rot = 146.488
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3364,7 +3379,7 @@ transform/rot = 21.6358
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3390,6 +3405,205 @@ trigger = false
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="star" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 429.585, 36.2637 )
+
+[node name="star2" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 348.689, 468.639 )
+
+[node name="star4" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -106.001, 474.218 )
+
+[node name="star5" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -343.11, 449.112 )
+
+[node name="star6" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -499.323, 234.319 )
+
+[node name="star11" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1193.11, 444.557 )
+
+[node name="star12" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1521.08, 87.1532 )
+
+[node name="star13" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1537.9, -211.384 )
+
+[node name="star14" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1753.39, -293.778 )
+
+[node name="star15" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1797.75, 67.4874 )
+
+[node name="star16" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1354.09, 992.833 )
+
+[node name="star17" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -1873.81, 1049.87 )
+
+[node name="star18" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -2342.82, 530.16 )
+
+[node name="star19" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -3166.76, -65.6101 )
+
+[node name="star20" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -3166.76, -65.6101 )
+
+[node name="star8" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -516.06, -167.371 )
+
+[node name="star9" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -513.271, 616.483 )
+
+[node name="star10" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -572.137, 1079 )
+
+[node name="star7" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( -937.277, 407.269 )
+
+[node name="star3" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 367.457, 774.46 )
+
+[node name="star21" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1178.72, 932.909 )
+
+[node name="star22" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1945.61, 951.923 )
+
+[node name="star23" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1413.22, 539.954 )
+
+[node name="star24" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1368.86, 140.662 )
+
+[node name="star25" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1299.14, -474.122 )
+
+[node name="star26" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2116.74, -81.1676 )
+
+[node name="star27" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2218.15, -581.868 )
+
+[node name="star28" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2902.65, -448.771 )
+
+[node name="star29" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 3124.48, 280.097 )
+
+[node name="star30" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 3282.93, 806.15 )
+
+[node name="star31" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2433.64, -822.712 )
+
+[node name="star32" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1292.8, -873.415 )
+
+[node name="star33" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 678.018, -1006.51 )
+
+[node name="star34" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 1654.07, -1431.16 )
+
+[node name="star35" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2611.1, -1564.26 )
+
+[node name="star36" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 3428.7, -924.119 )
+
+[node name="star37" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 3352.65, 1243.47 )
+
+[node name="star38" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 3378, 1801.21 )
+
+[node name="star1" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 429.585, -156.213 )
+
+[node name="herbeshautes" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2796.26, -963.22 )
+texture = ExtResource( 24 )
+
+[node name="herbeshautes8" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2800.34, -921.048 )
+texture = ExtResource( 24 )
+
+[node name="herbeshautes9" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2809.86, -991.788 )
+texture = ExtResource( 24 )
+
+[node name="herbeshautes10" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2830.27, -1016.27 )
+texture = ExtResource( 24 )
+
+[node name="herbeshautes11" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 2952.7, -761.884 )
+transform/rot = -157.083
+texture = ExtResource( 24 )
+
+[node name="herbeshautes12" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3041.13, -835.345 )
+transform/rot = -118.066
+texture = ExtResource( 24 )
+
+[node name="herbeshautes13" type="Sprite" parent="assets"]
+
+transform/pos = Vector2( 3090.1, -921.048 )
+transform/rot = -82.7487
+texture = ExtResource( 24 )
+
+[node name="neo" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2710.37, -1022.41 )
+transform/scale = Vector2( 0.1, 0.1 )
 
 [connection signal="body_enter" from="sounds/jungle" to="." method="_on_jungle_body_enter"]
 
