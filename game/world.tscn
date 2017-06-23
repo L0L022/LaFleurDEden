@@ -84,12 +84,19 @@ points = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
 [node name="world" type="Node2D"]
 
 script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="player" parent="." instance=ExtResource( 2 )]
 
 transform/pos = Vector2( 1528.68, 772.378 )
 
 [node name="planets" type="Node2D" parent="."]
+
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="refuge" parent="planets" groups=[
 "asset_drop_1",

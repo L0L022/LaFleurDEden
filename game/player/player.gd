@@ -10,12 +10,24 @@ var gravity_speed = 80
 
 var ground_normal = Vector2()
 
+var camera = null
 var shape = null
 var smoke = null
+var stars = null
+var shooting_star = null
+var light = null
 
 func _ready():
+	camera = get_node("camera")
 	shape = get_node("shape").get_shape()
 	smoke = get_node("smoke")
+	stars = get_node("stars")
+	shooting_star = get_node("shooting_star")
+	light = get_node("light")
+	
+	stars.set_emission_half_extents(get_viewport_rect().size)
+	shooting_star.set_emission_half_extents(get_viewport_rect().size)
+	
 	set_fixed_process(true)
 
 func _fixed_process(delta):
@@ -28,8 +40,10 @@ func _fixed_process(delta):
 	if(Input.is_action_pressed("ui_up")):
 		velocity.y -= SPEED * delta
 		smoke.set_emitting(true)
+		light.set_enabled(true)
 	else:
 		smoke.set_emitting(false)
+		light.set_enabled(false)
 	
 	if(Input.is_action_pressed("ui_down")):
 		velocity.y += SPEED * delta

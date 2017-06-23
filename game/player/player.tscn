@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=1]
+[gd_scene load_steps=8 format=1]
 
 [ext_resource path="res://player/player.gd" type="Script" id=1]
-[ext_resource path="res://art/fuseepanda.tex" type="Texture" id=2]
-[ext_resource path="res://art/fuseeparticules1.tex" type="Texture" id=3]
+[ext_resource path="res://art/gateparticules.tex" type="Texture" id=2]
+[ext_resource path="res://art/fuseepanda.tex" type="Texture" id=3]
+[ext_resource path="res://art/lightfusee.tex" type="Texture" id=4]
+[ext_resource path="res://art/fuseeparticules1.tex" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape2D" id=1]
 
@@ -40,31 +42,17 @@ damp_override/linear = -1.0
 damp_override/angular = -1.0
 script/script = ExtResource( 1 )
 
-[node name="sprite" type="Sprite" parent="."]
+[node name="stars" type="Particles2D" parent="."]
 
-transform/scale = Vector2( 0.4, 0.4 )
-texture = ExtResource( 2 )
-
-[node name="shape" type="CollisionShape2D" parent="."]
-
-transform/pos = Vector2( 3.258, 4.2236 )
-shape = SubResource( 1 )
-trigger = false
-_update_shape_index = 0
-
-[node name="smoke" type="Particles2D" parent="."]
-
-transform/pos = Vector2( 4.02356, 42.0477 )
-config/amount = 100
-config/lifetime = 0.1
+config/amount = 32
+config/lifetime = 2.0
 config/process_mode = 1
-config/half_extents = Vector2( 5, 5 )
 config/local_space = false
-config/texture = ExtResource( 3 )
+config/texture = ExtResource( 2 )
 params/direction = 0.0
-params/spread = 15.0
-params/linear_velocity = 400.0
-params/spin_velocity = 1.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
 params/orbit_velocity = 0.0
 params/gravity_direction = 0.0
 params/gravity_strength = 9.8
@@ -72,12 +60,75 @@ params/radial_accel = 0.0
 params/tangential_accel = 0.0
 params/damping = 0.0
 params/initial_angle = 0.0
-params/initial_size = 0.2
-params/final_size = 1.0
+params/initial_size = 1.0
+params/final_size = 0.0
 params/hue_variation = 0.0
 params/anim_speed_scale = 1.0
 params/anim_initial_pos = 0.0
-color/color_ramp = SubResource( 2 )
+
+[node name="shooting_star" type="Particles2D" parent="."]
+
+config/amount = 5
+config/lifetime = 2.0
+config/process_mode = 1
+config/local_space = false
+config/texture = ExtResource( 2 )
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 100.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.0
+params/final_size = 0.4
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+randomness/linear_velocity = 10.0
+randomness/spin_velocity = 1.0
+color/color = Color( 1, 0.956421, 0.601562, 1 )
+
+[node name="sprite" type="Sprite" parent="."]
+
+transform/scale = Vector2( 0.4, 0.4 )
+z/z = 1
+texture = ExtResource( 3 )
+
+[node name="light" type="Light2D" parent="."]
+
+transform/scale = Vector2( 0.4, 0.4 )
+z/z = 1
+enabled = false
+editor_only = false
+texture = ExtResource( 4 )
+offset = Vector2( 0, 0 )
+scale = 1.0
+color = Color( 0.925781, 0.917362, 0.386948, 1 )
+energy = 1.0
+mode = 0
+range/height = 0.0
+range/z_min = 1
+range/z_max = 1
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 1
+shadow/enabled = false
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 1
+
+[node name="shape" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 3.258, 4.2236 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
 
 [node name="camera" type="Camera2D" parent="."]
 
@@ -97,5 +148,33 @@ drag_margin/left = 0.2
 drag_margin/top = 0.2
 drag_margin/right = 0.2
 drag_margin/bottom = 0.2
+
+[node name="smoke" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 4.02356, 42.0477 )
+z/z = 2
+config/amount = 100
+config/lifetime = 0.1
+config/process_mode = 1
+config/half_extents = Vector2( 5, 5 )
+config/local_space = false
+config/texture = ExtResource( 5 )
+params/direction = 0.0
+params/spread = 15.0
+params/linear_velocity = 400.0
+params/spin_velocity = 1.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 0.2
+params/final_size = 1.0
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color_ramp = SubResource( 2 )
 
 
