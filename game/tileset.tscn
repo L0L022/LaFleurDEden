@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=1]
+[gd_scene load_steps=27 format=1]
 
 [ext_resource path="res://planet/planet.tscn" type="PackedScene" id=1]
 [ext_resource path="res://art/Refuge.tex" type="Texture" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://art/asteroide2.tex" type="Texture" id=10]
 [ext_resource path="res://art/montagne.tex" type="Texture" id=11]
 [ext_resource path="res://art/pyramide.tex" type="Texture" id=12]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=13]
+[ext_resource path="res://star/star.tscn" type="PackedScene" id=14]
 
 [sub_resource type="GDScript" id=1]
 
@@ -85,6 +87,7 @@ points = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
 "asset_drop_1",
 ] instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 366.595, 304.45 )
 
 [node name="sprite" type="Sprite" parent="refuge"]
@@ -99,6 +102,7 @@ __meta__ = {
 "asset_drop_1",
 ] instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1154.76, 298.268 )
 script/script = SubResource( 1 )
 
@@ -114,6 +118,7 @@ __meta__ = {
 "asset_drop_1",
 ] instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 1945.25, 310.883 )
 script/script = SubResource( 2 )
 
@@ -129,6 +134,7 @@ __meta__ = {
 "asset_drop_1",
 ] instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 339.048, 1092.96 )
 script/script = SubResource( 3 )
 
@@ -144,6 +150,7 @@ __meta__ = {
 "asset_drop_1",
 ] instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 3382.62, 299.734 )
 script/script = SubResource( 3 )
 
@@ -159,6 +166,7 @@ __meta__ = {
 "asset_drop_1",
 ] instance=ExtResource( 1 )]
 
+editor/display_folded = true
 transform/pos = Vector2( 2658.37, 282.49 )
 script/script = SubResource( 3 )
 
@@ -343,5 +351,29 @@ trigger = false
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="player" parent="." instance=ExtResource( 13 )]
+
+transform/pos = Vector2( 2951.79, 1058.05 )
+
+[node name="star" parent="." instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 3098.5, 1251.36 )
+
+[node name="star1" parent="." instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 3180.81, 933.058 )
+
+[node name="star2" parent="." instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 2684.87, 1235.63 )
+
+[node name="star3" parent="." instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 2875.33, 838.954 )
+
+[node name="star4" parent="." instance=ExtResource( 14 )]
+
+transform/pos = Vector2( 2581.22, 892.575 )
 
 
