@@ -16,6 +16,7 @@ var shape = null
 var smoke = null
 var stars = null
 var shooting_star = null
+var shoot_timer = null
 var light = null
 
 var can_shoot = true
@@ -26,6 +27,7 @@ func _ready():
 	smoke = get_node("smoke")
 	stars = get_node("stars")
 	shooting_star = get_node("shooting_star")
+	shoot_timer = get_node("shoot_timer")
 	light = get_node("light")
 	
 	stars.set_emission_half_extents(get_viewport_rect().size)
@@ -61,6 +63,7 @@ func _fixed_process(delta):
 	
 	if can_shoot and Input.is_action_pressed("ui_accept"):
 		can_shoot = false
+		shoot_timer.start()
 		var h = heart.instance()
 		get_tree().get_root().add_child(h)
 		h.add_collision_exception_with(self)
@@ -68,10 +71,11 @@ func _fixed_process(delta):
 		h.apply_impulse(Vector2(), Vector2(0, -1).rotated(get_rot())*800)
 
 func update_gravity():
-	gravity = Vector2()
-	for planet in get_tree().get_nodes_in_group("planets"):
-		if shape.collide(get_transform(), planet.gravity_zone, planet.get_transform()):
-			gravity = planet.get_pos()
+	pass
+#	gravity = Vector2()
+#	for planet in get_tree().get_nodes_in_group("planets"):
+#		if shape.collide(get_transform(), planet.gravity_zone, planet.get_transform()):
+#			gravity = planet.get_pos()
 
 func update_ground():
 	if gravity != Vector2():
@@ -79,7 +83,6 @@ func update_ground():
 		ground_normal = ground_normal.normalized()
 	else:
 		ground_normal = Vector2()
-	
 
 func _on_shoot_timer_timeout():
 	can_shoot = true

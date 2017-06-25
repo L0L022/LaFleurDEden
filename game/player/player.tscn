@@ -181,8 +181,8 @@ color/color_ramp = SubResource( 2 )
 
 process_mode = 1
 wait_time = 0.5
-one_shot = false
-autostart = true
+one_shot = true
+autostart = false
 
 [connection signal="timeout" from="shoot_timer" to="." method="_on_shoot_timer_timeout"]
 
