@@ -1230,7 +1230,6 @@ autoplay = ""
 
 [node name="hearts" type="Particles2D" parent="."]
 
-visibility/visible = false
 transform/pos = Vector2( -3.091, -420.46 )
 config/amount = 3
 config/lifetime = 4.0

@@ -12,23 +12,27 @@ var ground_normal = Vector2()
 var heart = preload("res://heart/heart.tscn")
 
 var camera = null
-var shape = null
 var smoke = null
 var stars = null
 var shooting_star = null
 var shoot_timer = null
 var light = null
+var shoot_origin = null
+var player = null
+
+const PLAYER_FUSEE = 0
 
 var can_shoot = true
 
 func _ready():
 	camera = get_node("camera")
-	shape = get_node("shape").get_shape()
 	smoke = get_node("smoke")
 	stars = get_node("stars")
 	shooting_star = get_node("shooting_star")
 	shoot_timer = get_node("shoot_timer")
 	light = get_node("light")
+	shoot_origin = get_node("shoot_origin")
+	player = get_node("player")
 	
 	stars.set_emission_half_extents(get_viewport_rect().size)
 	shooting_star.set_emission_half_extents(get_viewport_rect().size)
@@ -36,7 +40,6 @@ func _ready():
 	set_fixed_process(true)
 
 func _fixed_process(delta):
-	update_gravity()
 	update_ground()
 	apply_impulse(Vector2(), -ground_normal * gravity_speed * delta)
 	
@@ -46,9 +49,12 @@ func _fixed_process(delta):
 		velocity.y -= SPEED * delta
 		smoke.set_emitting(true)
 		light.set_enabled(true)
+		if not player.is_voice_active(PLAYER_FUSEE):
+			player.play("fusee", PLAYER_FUSEE)
 	else:
 		smoke.set_emitting(false)
 		light.set_enabled(false)
+		player.stop_voice(PLAYER_FUSEE)
 	
 	if(Input.is_action_pressed("ui_down")):
 		velocity.y += SPEED * delta
@@ -67,15 +73,8 @@ func _fixed_process(delta):
 		var h = heart.instance()
 		get_tree().get_root().add_child(h)
 		h.add_collision_exception_with(self)
-		h.set_pos(get_pos())
+		h.set_pos(shoot_origin.get_global_pos())
 		h.apply_impulse(Vector2(), Vector2(0, -1).rotated(get_rot())*800)
-
-func update_gravity():
-	pass
-#	gravity = Vector2()
-#	for planet in get_tree().get_nodes_in_group("planets"):
-#		if shape.collide(get_transform(), planet.gravity_zone, planet.get_transform()):
-#			gravity = planet.get_pos()
 
 func update_ground():
 	if gravity != Vector2():
