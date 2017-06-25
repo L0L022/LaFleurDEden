@@ -9,14 +9,13 @@
 [ext_resource path="res://art/neo_brasD_R.tex" type="Texture" id=7]
 [ext_resource path="res://art/love.tex" type="Texture" id=8]
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 300.021, 381.006 )
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=2]
 
-resource/name = "base"
 length = 1.0
 loop = false
 step = 0.1
@@ -141,9 +140,8 @@ tracks/11/keys = {
 "values": [ 61.0257 ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource/name = "dance0"
 length = 1.0
 loop = true
 step = 0.1
@@ -268,9 +266,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 63.5883 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource/name = "dance1"
 length = 1.0
 loop = true
 step = 0.1
@@ -395,9 +392,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 123.349 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource/name = "dance2"
 length = 1.0
 loop = true
 step = 0.1
@@ -522,9 +518,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 41.0601 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=6]
 
-resource/name = "dance3"
 length = 1.0
 loop = true
 step = 0.1
@@ -649,9 +644,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 70.5533, 54.6812 ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=7]
 
-resource/name = "dance4"
 length = 1.0
 loop = true
 step = 0.1
@@ -776,9 +770,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 106.221, 25.1666 ]
 }
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=8]
 
-resource/name = "dance5"
 length = 1.0
 loop = true
 step = 0.1
@@ -903,9 +896,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 63.9611, 61.0257, 59.1352 ]
 }
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=9]
 
-resource/name = "dance6"
 length = 1.0
 loop = true
 step = 0.1
@@ -1030,9 +1022,8 @@ tracks/11/keys = {
 "values": [ 61.0257, 61.0257 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=10]
 
-resource/name = "dance7"
 length = 1.0
 loop = true
 step = 0.1
@@ -1160,7 +1151,7 @@ tracks/11/keys = {
 [node name="neo" type="Area2D"]
 
 input/pickable = true
-shapes/0/shape = SubResource( 10 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1.02225, 0, -390.851 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -1173,48 +1164,48 @@ script/script = ExtResource( 1 )
 
 transform/pos = Vector2( 0, -390.851 )
 transform/scale = Vector2( 1, 1.02225 )
-shape = SubResource( 10 )
+shape = SubResource( 1 )
 trigger = false
 _update_shape_index = 0
 
 [node name="foot_back" type="Sprite" parent="."]
 
-transform/pos = Vector2( 16.6881, -89.6914 )
-transform/rot = 0.116486
-transform/scale = Vector2( 1, 1 )
+transform/pos = Vector2( 7.78844, -123.657 )
+transform/rot = 11.5107
 texture = ExtResource( 2 )
 offset = Vector2( 49.0663, 23.6528 )
 
 [node name="arm_back" type="Sprite" parent="."]
 
-transform/pos = Vector2( 86.8361, -293.455 )
-transform/rot = 30.1267
+transform/pos = Vector2( 70.0983, -316.67 )
+transform/rot = 68.6331
 texture = ExtResource( 3 )
 offset = Vector2( 28.9626, 70.5864 )
 
 [node name="body" type="Sprite" parent="."]
 
-transform/pos = Vector2( -75.3129, -209.02 )
+transform/pos = Vector2( -82.226, -252.048 )
+transform/rot = 5.01936
 texture = ExtResource( 4 )
 
 [node name="head" type="Sprite" parent="."]
 
-transform/pos = Vector2( -53.4599, -422.059 )
-transform/rot = 2.60829
+transform/pos = Vector2( -63.4484, -448.758 )
+transform/rot = 1.90206
 texture = ExtResource( 5 )
 offset = Vector2( 47.5832, -95.8989 )
 
 [node name="foot_front" type="Sprite" parent="."]
 
-transform/pos = Vector2( -160.352, -78.0001 )
-transform/rot = -1.74107
+transform/pos = Vector2( -179.049, -117.926 )
+transform/rot = -32.8777
 texture = ExtResource( 6 )
 offset = Vector2( 59.2561, 22.0065 )
 
 [node name="arm_front" type="Sprite" parent="."]
 
-transform/pos = Vector2( -178.724, -288.444 )
-transform/rot = 61.0257
+transform/pos = Vector2( -164.708, -317.048 )
+transform/rot = 74.4434
 texture = ExtResource( 7 )
 offset = Vector2( -37.1848, 86.3964 )
 
@@ -1223,15 +1214,15 @@ offset = Vector2( -37.1848, 86.3964 )
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/base = SubResource( 1 )
-anims/dance0 = SubResource( 2 )
-anims/dance1 = SubResource( 3 )
-anims/dance2 = SubResource( 4 )
-anims/dance3 = SubResource( 5 )
-anims/dance4 = SubResource( 6 )
-anims/dance5 = SubResource( 7 )
-anims/dance6 = SubResource( 8 )
-anims/dance7 = SubResource( 9 )
+anims/base = SubResource( 2 )
+anims/dance0 = SubResource( 3 )
+anims/dance1 = SubResource( 4 )
+anims/dance2 = SubResource( 5 )
+anims/dance3 = SubResource( 6 )
+anims/dance4 = SubResource( 7 )
+anims/dance5 = SubResource( 8 )
+anims/dance6 = SubResource( 9 )
+anims/dance7 = SubResource( 10 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -1269,8 +1260,10 @@ randomness/spin_velocity = 1.0
 process_mode = 1
 wait_time = 15.0
 one_shot = false
-autostart = false
+autostart = true
 
 [connection signal="body_enter" from="." to="." method="_on_neo_body_enter"]
+
+[connection signal="timeout" from="anim_timer" to="." method="_on_anim_timer_timeout"]
 
 

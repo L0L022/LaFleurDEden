@@ -1,4 +1,4 @@
-[gd_scene load_steps=99 format=1]
+[gd_scene load_steps=103 format=1]
 
 [ext_resource path="res://world.gd" type="Script" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
@@ -45,198 +45,201 @@
 [ext_resource path="res://art/asteroide2.tex" type="Texture" id=43]
 [ext_resource path="res://art/montagne.tex" type="Texture" id=44]
 [ext_resource path="res://art/pyramide.tex" type="Texture" id=45]
+[ext_resource path="res://neo/neo.tscn" type="PackedScene" id=46]
+[ext_resource path="res://star/star.tscn" type="PackedScene" id=47]
+[ext_resource path="res://star/star.gd" type="Script" id=48]
 
-[sub_resource type="ConvexPolygonShape2D" id=13]
+[sub_resource type="ConvexPolygonShape2D" id=1]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 395.636, -100.365, -228.914, -470.861, -91.301, -1063.65, 1062.53, -873.113, 2205.77, -449.689 )
 
-[sub_resource type="ConvexPolygonShape2D" id=14]
+[sub_resource type="ConvexPolygonShape2D" id=2]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2205.77, -449.689, 2237.53, 757.068, 1380.1, 926.438, 512.078, 746.483, 395.636, -100.365 )
 
-[sub_resource type="ConvexPolygonShape2D" id=15]
+[sub_resource type="ConvexPolygonShape2D" id=3]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2205.77, -449.689, 1062.53, -873.113, 1983.48, -788.428 )
 
-[sub_resource type="ConvexPolygonShape2D" id=16]
+[sub_resource type="ConvexPolygonShape2D" id=4]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 353.294, 291.302, 279.195, 1244.01, -345.355, 2207.3, -916.978, 1455.72, -853.464, -470.861, -186.571, -460.275, 289.781, -185.049 )
 
-[sub_resource type="ConvexPolygonShape2D" id=17]
+[sub_resource type="ConvexPolygonShape2D" id=5]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -1922.61, 1042.88, -1859.1, -449.689, -1605.04, -1254.19, -1044, -1148.34, -853.464, -470.861, -916.978, 1455.72 )
 
-[sub_resource type="ConvexPolygonShape2D" id=18]
+[sub_resource type="ConvexPolygonShape2D" id=6]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -2790.63, -5.09434, -2589.5, -470.861, -1859.1, -449.689, -1922.61, 1042.88 )
 
-[sub_resource type="ConvexPolygonShape2D" id=19]
+[sub_resource type="ConvexPolygonShape2D" id=7]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3063.21, 196.032, 3857.13, -15.68, 4227.62, 524.185, 3507.8, 1212.25, 2671.54, 1349.86, 2237.53, 788.825 )
 
-[sub_resource type="ConvexPolygonShape2D" id=20]
+[sub_resource type="ConvexPolygonShape2D" id=8]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3063.21, 196.032, 2237.53, 788.825, 2258.7, -79.1935, 2840.91, -163.878 )
 
-[sub_resource type="ConvexPolygonShape2D" id=21]
+[sub_resource type="ConvexPolygonShape2D" id=9]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 2582.92, -547.117, 2443.15, -1022.34, 2694.74, -1413.69, 3225.87, -1339.15, 3463.48, -1031.65, 3109.39, -551.776 )
 
-[sub_resource type="ConvexPolygonShape2D" id=22]
+[sub_resource type="ConvexPolygonShape2D" id=10]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4268.07, -37.099, 4807.61, -283.412, 5077.38, 220.943, 4948.36, 1710.55, 4209.42, 596.277 )
 
-[sub_resource type="ConvexPolygonShape2D" id=23]
+[sub_resource type="ConvexPolygonShape2D" id=11]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 1124.64, -975.434, 491.267, -1116.18, 620.289, -1972.42, 1945.69, -1667.46, 1652.46, -975.434 )
 
-[sub_resource type="ConvexPolygonShape2D" id=24]
+[sub_resource type="ConvexPolygonShape2D" id=12]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 151.121, 1475.97, 491.267, 772.215, 1335.77, 995.07, 1593.81, 1640.18, 1699.37, 2519.87, -95.1924, 2555.05 )
 
-[sub_resource type="ConvexPolygonShape2D" id=25]
+[sub_resource type="ConvexPolygonShape2D" id=13]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3881, -37.099, 3118.61, 162.297, 2790.19, -377.245, 3505.67, -1034.08, 3787.17, -494.537 )
 
-[sub_resource type="ConvexPolygonShape2D" id=26]
+[sub_resource type="ConvexPolygonShape2D" id=14]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -470.526, -1385.96, -177.297, -881.601, -353.235, -447.621, -857.59, -494.537, -1127.36, -1374.23, -1045.26, -1726.1 )
 
-[sub_resource type="ConvexPolygonShape2D" id=27]
+[sub_resource type="ConvexPolygonShape2D" id=15]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -2065.7, -1749.56, -1045.26, -1726.1, -1127.36, -1374.23, -2429.3, -1163.1, -3226.89, -1444.6 )
 
-[sub_resource type="ConvexPolygonShape2D" id=28]
+[sub_resource type="ConvexPolygonShape2D" id=16]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3625.68, -306.87, -3226.89, -1444.6, -2429.3, -1163.1, -2534.86, -564.913, -2769.45, -37.099, -3367.64, 783.944 )
 
-[sub_resource type="ConvexPolygonShape2D" id=29]
+[sub_resource type="ConvexPolygonShape2D" id=17]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3367.64, 783.944, -2769.45, -37.099, -2722.53, 103.651 )
 
-[sub_resource type="ConvexPolygonShape2D" id=30]
+[sub_resource type="ConvexPolygonShape2D" id=18]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3109.59, 1569.8, -3367.64, 783.944, -2722.53, 103.651, -2194.72, 795.674, -1584.8, 2203.18 )
 
-[sub_resource type="ConvexPolygonShape2D" id=31]
+[sub_resource type="ConvexPolygonShape2D" id=19]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -1584.8, 2203.18, -2194.72, 795.674, -1490.97, 1253.11 )
 
-[sub_resource type="ConvexPolygonShape2D" id=32]
+[sub_resource type="ConvexPolygonShape2D" id=20]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -95.1924, 2555.05, -1584.8, 2203.18, -1490.97, 1253.11, -951.423, 1475.97, -353.235, 2203.18 )
 
-[sub_resource type="ConvexPolygonShape2D" id=33]
+[sub_resource type="ConvexPolygonShape2D" id=21]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -95.1924, 2555.05, -353.235, 2203.18, 151.121, 1475.97 )
 
-[sub_resource type="ConvexPolygonShape2D" id=34]
+[sub_resource type="ConvexPolygonShape2D" id=22]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 1699.37, 2519.87, 1593.81, 1640.18, 2156.81, 1933.41 )
 
-[sub_resource type="ConvexPolygonShape2D" id=35]
+[sub_resource type="ConvexPolygonShape2D" id=23]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3705.07, 2191.45, 1699.37, 2519.87, 2156.81, 1933.41 )
 
-[sub_resource type="ConvexPolygonShape2D" id=36]
+[sub_resource type="ConvexPolygonShape2D" id=24]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3705.07, 2191.45, 2156.81, 1933.41, 2461.77, 1393.86, 3599.5, 1194.47, 4948.36, 1710.55 )
 
-[sub_resource type="ConvexPolygonShape2D" id=37]
+[sub_resource type="ConvexPolygonShape2D" id=25]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4948.36, 1710.55, 3599.5, 1194.47, 4209.42, 596.277 )
 
-[sub_resource type="ConvexPolygonShape2D" id=38]
+[sub_resource type="ConvexPolygonShape2D" id=26]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4268.07, -37.099, 4209.42, 596.277, 3881, -37.099, 3787.17, -494.537 )
 
-[sub_resource type="ConvexPolygonShape2D" id=39]
+[sub_resource type="ConvexPolygonShape2D" id=27]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3951.38, -1069.27, 3787.17, -494.537, 3505.67, -1034.08, 3892.73, -1644 )
 
-[sub_resource type="ConvexPolygonShape2D" id=40]
+[sub_resource type="ConvexPolygonShape2D" id=28]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3892.73, -1644, 3505.67, -1034.08, 3036.5, -1432.87, 3435.29, -2183.54 )
 
-[sub_resource type="ConvexPolygonShape2D" id=41]
+[sub_resource type="ConvexPolygonShape2D" id=29]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 620.289, -1972.42, 3435.29, -2183.54, 3036.5, -1432.87, 1945.69, -1667.46 )
 
-[sub_resource type="ConvexPolygonShape2D" id=42]
+[sub_resource type="ConvexPolygonShape2D" id=30]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 12021, 1458.85, 4956.65, 1659.7, 5111.84, 237.065, 12409.5, -6088.05 )
 
-[sub_resource type="ConvexPolygonShape2D" id=43]
+[sub_resource type="ConvexPolygonShape2D" id=31]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 12409.5, -6088.05, 5111.84, 237.065, 4742.02, -1422.27 )
 
-[sub_resource type="ConvexPolygonShape2D" id=44]
+[sub_resource type="ConvexPolygonShape2D" id=32]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 4988.34, 1721.16, 12021.2, 1463.88, 12621.8, 7669.83, -10001.8, 8012.85, 2243.71, 2495.28 )
 
-[sub_resource type="ConvexPolygonShape2D" id=45]
+[sub_resource type="ConvexPolygonShape2D" id=33]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -904.664, 2413.18, 2243.71, 2495.28, -10001.8, 8012.85 )
 
-[sub_resource type="ConvexPolygonShape2D" id=46]
+[sub_resource type="ConvexPolygonShape2D" id=34]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3180.13, 1556.95, -904.664, 2413.18, -10001.8, 8012.85 )
 
-[sub_resource type="ConvexPolygonShape2D" id=47]
+[sub_resource type="ConvexPolygonShape2D" id=35]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3180.13, 1556.95, -10001.8, 8012.85, -9983.71, -5696.96, -3719.67, -378.367 )
 
-[sub_resource type="ConvexPolygonShape2D" id=48]
+[sub_resource type="ConvexPolygonShape2D" id=36]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -3098.02, -1609.93, -3719.67, -378.367, -9983.71, -5696.96 )
 
-[sub_resource type="ConvexPolygonShape2D" id=49]
+[sub_resource type="ConvexPolygonShape2D" id=37]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -553.365, -1839.14, -3098.02, -1609.93, -9983.71, -5696.96, 12409.5, -6088.05, 3339.92, -2271.2 )
 
-[sub_resource type="ConvexPolygonShape2D" id=50]
+[sub_resource type="ConvexPolygonShape2D" id=38]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 3339.92, -2271.2, 12409.5, -6088.05, 4742.02, -1422.27 )
 
-[sub_resource type="SampleLibrary" id=51]
+[sub_resource type="SampleLibrary" id=39]
 
 samples/desert = {
 "db": 0.0,
@@ -293,7 +296,7 @@ samples/troploin = {
 "sample": ExtResource( 11 )
 }
 
-[sub_resource type="Animation" id=52]
+[sub_resource type="Animation" id=40]
 
 resource/name = "low"
 length = 0.5
@@ -310,7 +313,7 @@ tracks/0/keys = {
 "values": [ 0.0, -80.0 ]
 }
 
-[sub_resource type="Animation" id=53]
+[sub_resource type="Animation" id=41]
 
 resource/name = "up"
 length = 0.5
@@ -327,71 +330,76 @@ tracks/0/keys = {
 "values": [ -80.0, 0.0 ]
 }
 
-[sub_resource type="GDScript" id=1]
+[sub_resource type="GDScript" id=42]
 
 script/source = "extends StaticBody2D
 
 onready var gravity_zone = get_node(\"gravity_zone/collision\").get_shape()
 "
 
-[sub_resource type="GDScript" id=2]
+[sub_resource type="GDScript" id=43]
 
 script/source = "extends StaticBody2D
 
 onready var gravity_zone = get_node(\"gravity_zone/collision\").get_shape()
 "
 
-[sub_resource type="GDScript" id=3]
+[sub_resource type="GDScript" id=44]
 
 script/source = "extends StaticBody2D
 
 onready var gravity_zone = get_node(\"gravity_zone/collision\").get_shape()
 "
 
-[sub_resource type="ConvexPolygonShape2D" id=4]
+[sub_resource type="ConvexPolygonShape2D" id=45]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -28.6697, -88.9916, 31.6035, -138.676, 91.8766, -124.83, 116.312, -6.72693, -49.0323, 136.625 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
+[sub_resource type="ConvexPolygonShape2D" id=46]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -117.451, 87.7554, -86.4994, -52.339, -28.6697, -88.9916, -49.0323, 136.625, -102.789, 127.666 )
 
-[sub_resource type="ConvexPolygonShape2D" id=6]
+[sub_resource type="ConvexPolygonShape2D" id=47]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 106.49, 24.4648, 44.5876, 93.4569, -101.684, 43.6759, -106.328, -24.656, -44.1716, -60.2832, 73.9098, -91.1945 )
 
-[sub_resource type="ConvexPolygonShape2D" id=7]
+[sub_resource type="ConvexPolygonShape2D" id=48]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 73.9098, -91.1945, -44.1716, -60.2832, 21.847, -111.778 )
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
+[sub_resource type="ConvexPolygonShape2D" id=49]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -45.761, -55.0508, 39.1564, -66.3289, 80.9517, -21.2166, 43.1368, 20.5787, -11.9268, 57.7301, -59.6927, 54.4131, -84.9027, 7.97388 )
 
-[sub_resource type="ConvexPolygonShape2D" id=9]
+[sub_resource type="ConvexPolygonShape2D" id=50]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -88.9897, -73.2562, 13.2932, -198.102, 31.3433, -58.2147, -88.9897, -23.619 )
 
-[sub_resource type="ConvexPolygonShape2D" id=10]
+[sub_resource type="ConvexPolygonShape2D" id=51]
 
 custom_solver_bias = 0.0
 points = Vector2Array( 31.3433, -58.2147, 157.693, 10.9766, 223.875, 159.888, -219.852, 143.343, -88.9897, -23.619 )
 
-[sub_resource type="ConvexPolygonShape2D" id=11]
+[sub_resource type="ConvexPolygonShape2D" id=52]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -88.9897, -23.619, -219.852, 143.343, -158.181, -22.1149 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=53]
 
 custom_solver_bias = 0.0
 points = Vector2Array( -6.3916, -190.618, 258.322, 196.27, -261.602, 194.913 )
+
+[sub_resource type="CircleShape2D" id=54]
+
+custom_solver_bias = 0.0
+radius = 25.8717
 
 [node name="world" type="Node2D"]
 
@@ -407,17 +415,19 @@ transform/pos = Vector2( 400.52, 239.988 )
 
 [node name="sounds" type="Node2D" parent="."]
 
+editor/display_folded = true
+
 [node name="jungle" type="Area2D" parent="sounds"]
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 13 )
+shapes/0/shape = SubResource( 1 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 14 )
+shapes/1/shape = SubResource( 2 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 15 )
+shapes/2/shape = SubResource( 3 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -436,13 +446,13 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 16 )
+shapes/0/shape = SubResource( 4 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 17 )
+shapes/1/shape = SubResource( 5 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 18 )
+shapes/2/shape = SubResource( 6 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -461,10 +471,10 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 19 )
+shapes/0/shape = SubResource( 7 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 20 )
+shapes/1/shape = SubResource( 8 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -483,7 +493,7 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 21 )
+shapes/0/shape = SubResource( 9 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -502,64 +512,64 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 22 )
+shapes/0/shape = SubResource( 10 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 23 )
+shapes/1/shape = SubResource( 11 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 24 )
+shapes/2/shape = SubResource( 12 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 25 )
+shapes/3/shape = SubResource( 13 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 26 )
+shapes/4/shape = SubResource( 14 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 27 )
+shapes/5/shape = SubResource( 15 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 28 )
+shapes/6/shape = SubResource( 16 )
 shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 29 )
+shapes/7/shape = SubResource( 17 )
 shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 30 )
+shapes/8/shape = SubResource( 18 )
 shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = false
-shapes/9/shape = SubResource( 31 )
+shapes/9/shape = SubResource( 19 )
 shapes/9/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/9/trigger = false
-shapes/10/shape = SubResource( 32 )
+shapes/10/shape = SubResource( 20 )
 shapes/10/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/10/trigger = false
-shapes/11/shape = SubResource( 33 )
+shapes/11/shape = SubResource( 21 )
 shapes/11/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/11/trigger = false
-shapes/12/shape = SubResource( 34 )
+shapes/12/shape = SubResource( 22 )
 shapes/12/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/12/trigger = false
-shapes/13/shape = SubResource( 35 )
+shapes/13/shape = SubResource( 23 )
 shapes/13/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/13/trigger = false
-shapes/14/shape = SubResource( 36 )
+shapes/14/shape = SubResource( 24 )
 shapes/14/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/14/trigger = false
-shapes/15/shape = SubResource( 37 )
+shapes/15/shape = SubResource( 25 )
 shapes/15/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/15/trigger = false
-shapes/16/shape = SubResource( 38 )
+shapes/16/shape = SubResource( 26 )
 shapes/16/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/16/trigger = false
-shapes/17/shape = SubResource( 39 )
+shapes/17/shape = SubResource( 27 )
 shapes/17/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/17/trigger = false
-shapes/18/shape = SubResource( 40 )
+shapes/18/shape = SubResource( 28 )
 shapes/18/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/18/trigger = false
-shapes/19/shape = SubResource( 41 )
+shapes/19/shape = SubResource( 29 )
 shapes/19/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/19/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -578,31 +588,31 @@ trigger = false
 
 editor/display_folded = true
 input/pickable = true
-shapes/0/shape = SubResource( 42 )
+shapes/0/shape = SubResource( 30 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 43 )
+shapes/1/shape = SubResource( 31 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 44 )
+shapes/2/shape = SubResource( 32 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
-shapes/3/shape = SubResource( 45 )
+shapes/3/shape = SubResource( 33 )
 shapes/3/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/3/trigger = false
-shapes/4/shape = SubResource( 46 )
+shapes/4/shape = SubResource( 34 )
 shapes/4/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/4/trigger = false
-shapes/5/shape = SubResource( 47 )
+shapes/5/shape = SubResource( 35 )
 shapes/5/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/5/trigger = false
-shapes/6/shape = SubResource( 48 )
+shapes/6/shape = SubResource( 36 )
 shapes/6/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/6/trigger = false
-shapes/7/shape = SubResource( 49 )
+shapes/7/shape = SubResource( 37 )
 shapes/7/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/7/trigger = false
-shapes/8/shape = SubResource( 50 )
+shapes/8/shape = SubResource( 38 )
 shapes/8/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/8/trigger = false
 gravity_vec = Vector2( 0, 1 )
@@ -620,7 +630,7 @@ trigger = false
 [node name="song_player" type="SamplePlayer" parent="sounds"]
 
 config/polyphony = 1
-config/samples = SubResource( 51 )
+config/samples = SubResource( 39 )
 default/volume_db = -30.0
 default/pitch_scale = 1.0
 default/pan = 0.0
@@ -639,8 +649,8 @@ default/chorus_send = 0.0
 playback/process_mode = 1
 playback/default_blend_time = 0.0
 root/root = NodePath("..")
-anims/low = SubResource( 52 )
-anims/up = SubResource( 53 )
+anims/low = SubResource( 40 )
+anims/up = SubResource( 41 )
 playback/active = true
 playback/speed = 1.0
 blend_times = [  ]
@@ -673,7 +683,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2009.7, 1553.37 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert"]
 
@@ -688,7 +698,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -370.146, 1669.83 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert7"]
 
@@ -704,7 +714,7 @@ __meta__ = {
 
 transform/pos = Vector2( 2121.78, -1145.33 )
 transform/rot = 112.528
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert8"]
 
@@ -719,7 +729,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -125.512, 970.094 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert2"]
 
@@ -735,7 +745,7 @@ __meta__ = {
 
 transform/pos = Vector2( 4288.68, -480.131 )
 transform/rot = -104.946
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert9"]
 
@@ -751,7 +761,7 @@ __meta__ = {
 
 transform/pos = Vector2( -965.076, 0.382996 )
 transform/rot = 75.0
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert3"]
 
@@ -767,7 +777,7 @@ __meta__ = {
 
 transform/pos = Vector2( -1739.12, 567.665 )
 transform/rot = -21.7402
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert5"]
 
@@ -783,7 +793,7 @@ __meta__ = {
 
 transform/pos = Vector2( -2291.6, -140.44 )
 transform/rot = 75.0
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert6"]
 
@@ -798,7 +808,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1357.4, -716.752 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert4"]
 
@@ -813,7 +823,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -36.7802, 25.0656 )
-script/script = SubResource( 1 )
+script/script = SubResource( 42 )
 
 [node name="sprite" type="Sprite" parent="planets/desert1"]
 
@@ -829,7 +839,7 @@ __meta__ = {
 
 transform/pos = Vector2( 1894.55, 380.601 )
 transform/rot = -144.047
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin"]
 
@@ -844,7 +854,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4329.23, -1238.99 )
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin3"]
 
@@ -859,7 +869,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 886.807, 279.193 )
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin1"]
 
@@ -875,7 +885,7 @@ __meta__ = {
 
 transform/pos = Vector2( -932.193, 786.231 )
 transform/rot = 114.704
-script/script = SubResource( 2 )
+script/script = SubResource( 43 )
 
 [node name="sprite" type="Sprite" parent="planets/jardin2"]
 
@@ -891,7 +901,7 @@ __meta__ = {
 
 transform/pos = Vector2( 573.553, 1460.56 )
 transform/rot = -117.947
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige"]
 
@@ -907,7 +917,7 @@ __meta__ = {
 
 transform/pos = Vector2( 1349.54, 1995.13 )
 transform/rot = -91.9197
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige10"]
 
@@ -922,7 +932,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2754.92, 1701.98 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige11"]
 
@@ -938,7 +948,7 @@ __meta__ = {
 
 transform/pos = Vector2( 4345.09, 1421.7 )
 transform/rot = -121.308
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige13"]
 
@@ -953,7 +963,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4608.21, 266.253 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige14"]
 
@@ -969,7 +979,7 @@ __meta__ = {
 
 transform/pos = Vector2( 3375.71, -255.22 )
 transform/rot = 131.096
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige9"]
 
@@ -984,7 +994,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1150.62, -1387.78 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige16"]
 
@@ -1000,7 +1010,7 @@ __meta__ = {
 
 transform/pos = Vector2( 3444.35, -1605.15 )
 transform/rot = 118.542
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige15"]
 
@@ -1016,7 +1026,7 @@ __meta__ = {
 
 transform/pos = Vector2( -608.308, -790.209 )
 transform/rot = 98.0688
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige7"]
 
@@ -1031,7 +1041,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -3018.56, -641.205 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige6"]
 
@@ -1047,7 +1057,7 @@ __meta__ = {
 
 transform/pos = Vector2( -3009.3, 381.019 )
 transform/rot = 164.348
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige5"]
 
@@ -1062,7 +1072,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( -1241.61, 1718.51 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige4"]
 
@@ -1078,7 +1088,7 @@ __meta__ = {
 
 transform/pos = Vector2( -2375.59, 1234.9 )
 transform/rot = -153.423
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige1"]
 
@@ -1094,7 +1104,7 @@ __meta__ = {
 
 transform/pos = Vector2( 232.474, -644.625 )
 transform/rot = -144.582
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere"]
 
@@ -1109,7 +1119,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 1767.19, -480.806 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere1"]
 
@@ -1124,7 +1134,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2784.59, 941.827 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere2"]
 
@@ -1139,7 +1149,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 4975.81, 3979.89 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/riviere3"]
 
@@ -1154,7 +1164,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 2569.64, 257.138 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige2"]
 
@@ -1169,7 +1179,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 3690.5, 524.421 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige12"]
 
@@ -1184,7 +1194,7 @@ __meta__ = {
 ] instance=ExtResource( 12 )]
 
 transform/pos = Vector2( 858.384, -452.716 )
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige3"]
 
@@ -1200,7 +1210,7 @@ __meta__ = {
 
 transform/pos = Vector2( -2114.1, -810.659 )
 transform/rot = 76.4531
-script/script = SubResource( 3 )
+script/script = SubResource( 44 )
 
 [node name="sprite" type="Sprite" parent="planets/neige8"]
 
@@ -1847,10 +1857,10 @@ texture = ExtResource( 40 )
 editor/display_folded = true
 transform/pos = Vector2( -2327.42, -1404.55 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1882,10 +1892,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -1452.78, -1550.33 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1918,10 +1928,10 @@ editor/display_folded = true
 transform/pos = Vector2( -546.444, -1696.1 )
 transform/rot = -180.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1953,10 +1963,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -550.543, 2369.29 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -1988,10 +1998,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 379.313, 2126.49 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2023,10 +2033,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -2203.43, 1979.77 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2059,10 +2069,10 @@ editor/display_folded = true
 transform/pos = Vector2( 2482.73, -457.532 )
 transform/rot = -160.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2094,10 +2104,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 2678.9, -1913.31 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2130,10 +2140,10 @@ editor/display_folded = true
 transform/pos = Vector2( -3425.63, -1176.71 )
 transform/rot = 24.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2165,10 +2175,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 745.569, 789.785 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2200,10 +2210,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 3428.26, 2311.31 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2235,10 +2245,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 4299.78, 2093.43 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2270,12 +2280,11 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 5052.42, 853.034 )
 transform/rot = 10.0
-transform/scale = Vector2( 1, 1 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2307,10 +2316,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 5109.75, -360.259 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2342,10 +2351,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 1841.99, -1821.2 )
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2378,10 +2387,10 @@ editor/display_folded = true
 transform/pos = Vector2( 3845.82, 2906.19 )
 transform/rot = 150.0
 input/pickable = false
-shapes/0/shape = SubResource( 4 )
+shapes/0/shape = SubResource( 45 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 5 )
+shapes/1/shape = SubResource( 46 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2414,10 +2423,10 @@ editor/display_folded = true
 transform/pos = Vector2( -3606.83, -274.071 )
 transform/rot = -90.0
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
+shapes/1/shape = SubResource( 48 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2449,10 +2458,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3466.77, 1328.89 )
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
+shapes/1/shape = SubResource( 48 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2484,10 +2493,10 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3802.21, 108.235 )
 input/pickable = false
-shapes/0/shape = SubResource( 6 )
+shapes/0/shape = SubResource( 47 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 7 )
+shapes/1/shape = SubResource( 48 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
 collision/layers = 1
@@ -2519,7 +2528,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 1327.25, 1262.73 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2551,7 +2560,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 4318.83, 3487.82 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2583,7 +2592,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 2809.24, 2468.46 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2615,7 +2624,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 5057.21, 1661.93 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2647,7 +2656,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 4990.1, -1006.99 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2679,7 +2688,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 3962.8, -1610.98 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2711,7 +2720,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 2190.98, 2132.17 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2744,7 +2753,7 @@ editor/display_folded = true
 transform/pos = Vector2( 1790.58, 2452.49 )
 transform/rot = 175.0
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2778,7 +2787,7 @@ transform/pos = Vector2( -283.328, 1622.59 )
 transform/rot = 175.0
 transform/scale = Vector2( 0.7346, 0.7346 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2810,7 +2819,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 1046.97, 2572.61 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2842,7 +2851,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 45.5712, -1375.95 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2874,7 +2883,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( 482.892, -1566.09 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2906,7 +2915,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3061.94, 1757.49 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2938,7 +2947,7 @@ __meta__ = {
 editor/display_folded = true
 transform/pos = Vector2( -3610.28, 847.753 )
 input/pickable = false
-shapes/0/shape = SubResource( 8 )
+shapes/0/shape = SubResource( 49 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -2973,13 +2982,13 @@ transform/rot = 144.145
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3014,13 +3023,13 @@ transform/rot = 28.407
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3055,13 +3064,13 @@ transform/rot = -124.063
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3096,13 +3105,13 @@ transform/rot = 95.4592
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3137,13 +3146,13 @@ transform/rot = 49.9066
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3178,13 +3187,13 @@ transform/rot = -39.0105
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3219,13 +3228,13 @@ transform/rot = -6.33721
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 9 )
+shapes/0/shape = SubResource( 50 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
-shapes/1/shape = SubResource( 10 )
+shapes/1/shape = SubResource( 51 )
 shapes/1/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/1/trigger = false
-shapes/2/shape = SubResource( 11 )
+shapes/2/shape = SubResource( 52 )
 shapes/2/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/2/trigger = false
 collision/layers = 1
@@ -3259,7 +3268,7 @@ transform/pos = Vector2( 2001.73, 1286.8 )
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3294,7 +3303,7 @@ transform/rot = 96.8514
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3329,7 +3338,7 @@ transform/rot = 146.488
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3364,7 +3373,7 @@ transform/rot = 21.6358
 transform/scale = Vector2( 0.6, 0.6 )
 z/z = -1
 input/pickable = false
-shapes/0/shape = SubResource( 12 )
+shapes/0/shape = SubResource( 53 )
 shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
 shapes/0/trigger = false
 collision/layers = 1
@@ -3391,6 +3400,2686 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="neo" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2682.01, -895.509 )
+transform/rot = 105.408
+transform/scale = Vector2( 0.1, 0.1 )
+
+[node name="neo1" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2763.44, -850.226 )
+transform/rot = 142.045
+transform/scale = Vector2( 0.1, 0.1 )
+
+[node name="neo2" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2917.07, -817.147 )
+transform/rot = 201.198
+transform/scale = Vector2( 0.1, 0.1 )
+
+[node name="neo3" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 2983.97, -876.69 )
+transform/rot = 246.766
+transform/scale = Vector2( 0.1, 0.1 )
+
+[node name="neo4" parent="assets" instance=ExtResource( 46 )]
+
+transform/pos = Vector2( 3005.52, -964.704 )
+transform/rot = 276.289
+transform/scale = Vector2( 0.1, 0.1 )
+
+[node name="star" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 348.297, -25.2101 )
+
+[node name="star40" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 536.661, -419.062 )
+
+[node name="star41" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 639.405, -819.763 )
+
+[node name="star42" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 937.362, -812.914 )
+
+[node name="star43" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1187.37, -655.373 )
+
+[node name="star44" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1204.5, -347.141 )
+
+[node name="star45" parent="assets" groups=[
+"asset_drop_1",
+"asset_drop_2",
+] instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 841.468, -114.255 )
+
+[node name="star46" parent="assets" groups=[
+"asset_drop_1",
+"asset_drop_2",
+] instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 841.468, -114.255 )
+
+[node name="star1" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 229.944, -214.303 )
+
+[node name="star2" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -281.274, -296.098 )
+
+[node name="star3" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -494.85, -23.4479 )
+
+[node name="star4" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -499.394, 337.813 )
+
+[node name="star9" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -723.856, 363.66 )
+
+[node name="star10" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1000.79, 391.353 )
+
+[node name="star11" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1239.95, 471.914 )
+
+[node name="star12" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1332.68, 682.094 )
+
+[node name="star13" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1322.4, 962.928 )
+
+[node name="star14" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1134.04, 1216.36 )
+
+[node name="star15" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -774.437, 1236.91 )
+
+[node name="star16" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -562.099, 983.476 )
+
+[node name="star17" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -342.912, 1295.13 )
+
+[node name="star18" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -818.959, 1641.04 )
+
+[node name="star19" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1675.16, 1534.87 )
+
+[node name="star20" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1884.07, 1069.1 )
+transform/rot = -22.1757
+
+[node name="star21" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2110.11, 764.289 )
+transform/rot = -22.1757
+
+[node name="star22" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2151.21, 480.031 )
+transform/rot = -22.1757
+
+[node name="star23" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1815.58, 158.1 )
+transform/rot = -22.1757
+
+[node name="star24" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1377.2, -95.3348 )
+transform/rot = -22.1757
+
+[node name="star25" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1116.92, -365.894 )
+transform/rot = -22.1757
+
+[node name="star26" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -986.774, -773.445 )
+transform/rot = -22.1757
+
+[node name="star27" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -623.746, -1126.2 )
+transform/rot = -22.1757
+
+[node name="star28" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -202.496, -728.922 )
+transform/rot = -22.1757
+
+[node name="star29" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1736.8, -800.843 )
+transform/rot = -22.1757
+
+[node name="star30" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1853.25, -1170.72 )
+transform/rot = -22.1757
+
+[node name="star31" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2243.67, -1191.27 )
+transform/rot = -22.1757
+
+[node name="star32" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2572.46, -1020.03 )
+transform/rot = -22.1757
+
+[node name="star33" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2610.13, -622.754 )
+transform/rot = -22.1757
+
+[node name="star34" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2719.72, -321.371 )
+transform/rot = -22.1757
+
+[node name="star35" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2699.17, 99.8786 )
+transform/rot = -22.1757
+
+[node name="star37" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2569.66, 408.882 )
+transform/rot = -22.1757
+
+[node name="star38" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2799.14, 749.694 )
+transform/rot = -22.1757
+
+[node name="star39" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2178.87, 133.96 )
+transform/rot = -22.1757
+
+[node name="star36" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2206, -478.912 )
+transform/rot = -22.1757
+
+[node name="star5" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -10.8966, 549.116 )
+
+[node name="star6" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 386.718, 705.89 )
+
+[node name="star7" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 386.718, 705.89 )
+
+[node name="star8" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 270.242, 1059.97 )
+
+[node name="star45 2" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1061.11, -67.6195 )
+transform/rot = -37.2079
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 3" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1228.02, 59.1065 )
+transform/rot = -71.5651
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 2" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1296.02, 263.105 )
+transform/rot = 77.0054
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 4" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1249.65, 464.012 )
+transform/rot = 40.2364
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 3" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1088.93, 600.01 )
+transform/rot = 31.8275
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 4" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 909.656, 711.282 )
+transform/rot = -61.5873
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 5" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1011.65, 899.826 )
+transform/rot = -19.6538
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 5" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1228.02, 977.098 )
+transform/rot = -5.7928
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 6" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1441.29, 998.734 )
+transform/rot = -3.46823
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 6" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1645.28, 1011.1 )
+transform/rot = 9.05787
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 7" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1858.56, 977.098 )
+transform/rot = 56.0702
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 8" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1972.92, 807.099 )
+transform/rot = 339.538
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 7" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1765.83, 729.827 )
+transform/rot = 327.829
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 9" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1574.19, 609.283 )
+transform/rot = 288.947
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 8" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1503.1, 402.194 )
+transform/rot = 272.526
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 10" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1493.83, 192.014 )
+transform/rot = 46.1935
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 11" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1639.1, 40.5612 )
+transform/rot = 12.8043
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 12" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1843.1, -5.80198 )
+transform/rot = 2.38594
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 13" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2065.64, -15.0746 )
+transform/rot = -37.2079
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 14" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2232.55, 111.651 )
+transform/rot = 450.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 23" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2934.23, 392.237 )
+transform/rot = 270.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 15" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2934.23, 154.24 )
+transform/rot = 299.134
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 24" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2829.14, -34.304 )
+transform/rot = 332.021
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 16" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2631.32, -139.394 )
+transform/rot = 370.438
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 25" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2396.41, -96.1216 )
+transform/rot = 16.6993
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 26" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1592.78, -161.596 )
+transform/rot = 15.6558
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 17" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1754.54, -206.929 )
+transform/rot = 224.626
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 18" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1916.3, -252.262 )
+transform/rot = 239.853
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 19" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2078.05, -297.594 )
+transform/rot = 271.591
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 27" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2071.87, -520.138 )
+transform/rot = 300.816
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 28" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1966.78, -696.318 )
+transform/rot = 329.967
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 29" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1768.96, -810.681 )
+transform/rot = 372.619
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 30" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1561.88, -764.317 )
+transform/rot = 57.6526
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 20" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1444.42, -578.865 )
+transform/rot = 79.5401
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 21" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1407.33, -377.957 )
+transform/rot = 63.4354
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 31" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2114.71, -800.292 )
+transform/rot = 12.6193
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 32" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2321.8, -846.655 )
+transform/rot = 63.435
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 33" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2417.62, -1038.29 )
+transform/rot = 270.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 22" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2417.62, -1260.83 )
+transform/rot = 305.64
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 23" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2300.16, -1424.65 )
+transform/rot = 339.444
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 34" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2102.35, -1498.83 )
+transform/rot = 377.354
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 24" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1904.53, -1437.01 )
+transform/rot = 62.2815
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 35" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1808.71, -1254.65 )
+transform/rot = 82.5686
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 25" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1780.9, -1041.38 )
+transform/rot = 305.272
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 26" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1865.41, -902.291 )
+transform/rot = 90.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 36" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1120.51, -1013.56 )
+transform/rot = 26.0458
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 37" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1326.05, -1114.02 )
+transform/rot = 48.061
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 38" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1531.59, -1214.47 )
+transform/rot = 71.565
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 27" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1599.59, -1418.47 )
+transform/rot = 291.038
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 28" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1522.32, -1619.38 )
+transform/rot = 326.768
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 29" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1343.05, -1736.83 )
+transform/rot = 355.855
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 39" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1129.78, -1752.28 )
+transform/rot = 380.045
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 40" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 901.053, -1668.83 )
+transform/rot = 65.1196
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 41" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 802.145, -1455.56 )
+transform/rot = -77.1957
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 42" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 848.508, -1251.56 )
+transform/rot = -49.808
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 30" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 999.961, -1072.29 )
+transform/rot = 333.435
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 31" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 205.605, -979.563 )
+transform/rot = 30.7792
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 32" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 394.149, -1091.86 )
+transform/rot = 37.9021
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 33" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 582.693, -1204.17 )
+transform/rot = 42.2961
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 34" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 771.236, -1316.47 )
+transform/rot = 59.6567
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 35" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -56.4071, -780.769 )
+transform/rot = -75.0124
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 43" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3.86211, -584.499 )
+transform/rot = -45.17
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 44" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 48.6828, -388.228 )
+transform/rot = -17.4027
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 45" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 255.772, -323.319 )
+transform/rot = 14.6567
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 36" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 456.679, -375.864 )
+transform/rot = 65.0952
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 37" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 305.226, -956.95 )
+transform/rot = -32.6994
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 46" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 555.587, -796.224 )
+transform/rot = 360.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 47" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1663.38, -641.68 )
+transform/rot = -18.0905
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 48" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1431.57, -565.953 )
+transform/rot = 10.3244
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 49" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1199.75, -490.227 )
+transform/rot = 41.6335
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 38" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1032.85, -638.589 )
+transform/rot = 275.195
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 39" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -844.302, -323.319 )
+transform/rot = -40.7462
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 50" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -643.394, -150.23 )
+transform/rot = 291.802
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 40" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -368.306, 28.218 )
+transform/rot = -63.4349
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 51" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -272.489, 219.853 )
+transform/rot = -33.9298
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 41" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -102.49, 334.215 )
+transform/rot = 8.74613
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 42" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 98.4167, 303.306 )
+transform/rot = 39.4725
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 52" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 256.052, 173.489 )
+transform/rot = 79.5084
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 53" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2616.59, -188.144 )
+transform/rot = 54.7824
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 43" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2523.86, -319.506 )
+transform/rot = 11.6803
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 54" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2431.13, -450.868 )
+transform/rot = -15.8431
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 44" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2202.41, -385.96 )
+transform/rot = -39.4725
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 55" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2044.77, -256.143 )
+transform/rot = -79.177
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 56" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2004.59, -45.9631 )
+transform/rot = 84.2894
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 57" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1924.23, -392.142 )
+transform/rot = -51.7591
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 45" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1801.62, -236.567 )
+transform/rot = -42.1335
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 46" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1679.02, -80.993 )
+transform/rot = -36.1234
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 58" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1556.41, 74.5813 )
+transform/rot = -13.0919
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 59" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3380.39, -711.906 )
+transform/rot = 35.0958
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 47" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3239.29, -811.053 )
+transform/rot = 8.64281
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 48" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3098.2, -910.201 )
+transform/rot = -4.54804
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 49" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2957.1, -1009.35 )
+transform/rot = -32.9052
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 50" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2762.62, -883.507 )
+transform/rot = -53.1302
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 60" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2642.5, -723.346 )
+transform/rot = 84.144
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 51" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2665.38, -500.265 )
+transform/rot = 33.6901
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 52" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2871.3, -362.984 )
+transform/rot = 5.44032
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 53" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3111.54, -340.104 )
+transform/rot = 333.435
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 54" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3294.59, -431.624 )
+transform/rot = 298.179
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 61" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2922.78, 94.6192 )
+transform/rot = -3.01278
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 55" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3140.15, 83.1791 )
+transform/rot = 35.9098
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 56" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3306.03, 203.3 )
+transform/rot = 72.5528
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 57" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3368.95, 403.501 )
+transform/rot = -63.4349
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 58" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3277.43, 586.542 )
+transform/rot = -39.4725
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 59" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -3082.94, 746.703 )
+transform/rot = -8.13011
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 60" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2882.74, 775.304 )
+transform/rot = 29.0546
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 62" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2676.82, 660.903 )
+transform/rot = 74.0545
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 63" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2619.62, 460.702 )
+transform/rot = 295.201
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 61" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2711.14, 266.22 )
+transform/rot = 298.74
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 64" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2808.38, 88.8992 )
+transform/rot = 315.001
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 62" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2617.7, 994.59 )
+transform/rot = 52.0013
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 65" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2760.7, 1177.63 )
+transform/rot = 86.9872
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 66" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2772.14, 1394.99 )
+transform/rot = -46.0416
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 63" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2617.7, 1555.15 )
+transform/rot = -2.73208e-05
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 67" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2394.61, 1555.15 )
+transform/rot = 15.1241
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 68" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2182.97, 1497.95 )
+transform/rot = 44.029
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 69" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2011.37, 1332.07 )
+transform/rot = 80.0738
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 70" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1971.33, 1103.27 )
+transform/rot = 297.255
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 64" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2068.57, 914.51 )
+transform/rot = 331.504
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 65" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2268.77, 805.829 )
+transform/rot = 360.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 71" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -2468.98, 805.829 )
+transform/rot = 23.9625
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 66" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1353.57, 2032.45 )
+transform/rot = -5.19443
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 72" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1101.89, 2055.33 )
+transform/rot = 40.6013
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 67" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -941.726, 1918.05 )
+transform/rot = 61.2602
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 68" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -844.485, 1740.73 )
+transform/rot = 277.907
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 69" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -873.085, 1534.81 )
+transform/rot = 317.291
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 70" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1021.81, 1397.53 )
+transform/rot = -16.9908
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 73" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1227.73, 1334.61 )
+transform/rot = 376.699
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 71" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1456.53, 1403.25 )
+transform/rot = 53.1301
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 72" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( -1576.65, 1563.41 )
+transform/rot = 79.2157
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 86" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1160.99, 1663.28 )
+transform/rot = 84.629
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 87" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1143.91, 1844.99 )
+transform/rot = -67.4239
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 87" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1126.83, 2026.69 )
+transform/rot = -51.9053
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 88" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1109.75, 2208.39 )
+transform/rot = -18.0605
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 88" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1324.06, 2278.27 )
+transform/rot = -1.302
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 89" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1529.06, 2282.93 )
+transform/rot = 51.5463
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 90" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 1654.85, 2124.53 )
+transform/rot = 82.875
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 91" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2518.79, 1947.48 )
+transform/rot = -20.0952
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 89" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2709.81, 2017.37 )
+transform/rot = 1.12334
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 92" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2947.42, 2012.71 )
+transform/rot = 44.1697
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 90" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3110.49, 1854.3 )
+transform/rot = 67.9638
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 93" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3189.69, 1658.63 )
+transform/rot = 298.706
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 91" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3082.53, 1462.95 )
+transform/rot = 329.47
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 94" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2900.83, 1355.79 )
+transform/rot = 362.386
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 95" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2677.2, 1365.11 )
+transform/rot = 37.7757
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 92" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 2490.84, 1509.54 )
+transform/rot = 62.354
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 93" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3457.32, 702.703 )
+transform/rot = -21.0375
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 96" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3639.02, 772.589 )
+transform/rot = -2.1211
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 97" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3820.72, 842.474 )
+transform/rot = 15.9454
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 94" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4016.4, 786.566 )
+transform/rot = 70.4269
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 95" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4090.94, 576.91 )
+transform/rot = 274.764
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 96" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4072.31, 353.278 )
+transform/rot = 323.807
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 98" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3881.29, 213.508 )
+transform/rot = 346.264
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 99" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3671.63, 162.259 )
+transform/rot = 381.801
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 100" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3438.68, 255.439 )
+transform/rot = 61.1892
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 97" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3336.18, 441.799 )
+transform/rot = 90.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 101" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3494.59, 38.7934 )
+transform/rot = 26.9395
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 98" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3636.69, -33.4212 )
+transform/rot = 261.401
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 102" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3778.79, -105.636 )
+transform/rot = -80.2176
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 103" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3743.84, -308.303 )
+transform/rot = -52.1885
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 99" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3708.9, -510.969 )
+transform/rot = 335.136
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 104" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3517.88, -599.491 )
+transform/rot = 366.203
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 105" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3303.57, -576.196 )
+transform/rot = 50.7928
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 100" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3159.14, -399.153 )
+transform/rot = 81.3474
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 106" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3126.53, -184.839 )
+transform/rot = 290.095
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 107" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3196.41, 6.18032 )
+transform/rot = 540.0
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 101" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4193.44, -194.157 )
+transform/rot = 19.9831
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 108" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4372.81, -259.383 )
+transform/rot = 49.0282
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 109" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4552.18, -324.609 )
+transform/rot = 75.6507
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 102" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4603.43, -524.946 )
+transform/rot = 287.021
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 110" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4533.55, -753.238 )
+transform/rot = 343.072
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 103" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4319.23, -818.464 )
+transform/rot = 375.945
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star46 104" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 4090.94, -753.238 )
+transform/rot = 46.6366
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 111" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3932.53, -585.514 )
+transform/rot = 86.0091
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
+[node name="star45 112" type="Area2D" parent="assets" instance=ExtResource( 47 )]
+
+transform/pos = Vector2( 3918.56, -385.176 )
+transform/rot = -65.2247
+input/pickable = true
+shapes/0/shape = SubResource( 54 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 48 )
+
 [connection signal="body_enter" from="sounds/jungle" to="." method="_on_jungle_body_enter"]
 
 [connection signal="body_enter" from="sounds/desert" to="." method="_on_desert_body_enter"]
@@ -3404,5 +6093,433 @@ __meta__ = {
 [connection signal="body_enter" from="sounds/void" to="." method="_on_void_body_enter"]
 
 [connection signal="finished" from="sounds/song_anim" to="." method="_on_song_anim_finished"]
+
+[connection signal="body_enter" from="assets/star45 2" to="assets/star45 2" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 3" to="assets/star45 3" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 2" to="assets/star46 2" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 4" to="assets/star45 4" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 3" to="assets/star46 3" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 4" to="assets/star46 4" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 5" to="assets/star45 5" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 5" to="assets/star46 5" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 6" to="assets/star45 6" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 6" to="assets/star46 6" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 7" to="assets/star45 7" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 8" to="assets/star45 8" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 7" to="assets/star46 7" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 9" to="assets/star45 9" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 8" to="assets/star46 8" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 10" to="assets/star45 10" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 11" to="assets/star45 11" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 12" to="assets/star45 12" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 13" to="assets/star45 13" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 14" to="assets/star45 14" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 15" to="assets/star45 15" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 9" to="assets/star46 9" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 10" to="assets/star46 10" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 16" to="assets/star45 16" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 11" to="assets/star46 11" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 12" to="assets/star46 12" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 17" to="assets/star45 17" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 13" to="assets/star46 13" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 18" to="assets/star45 18" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 14" to="assets/star46 14" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 19" to="assets/star45 19" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 20" to="assets/star45 20" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 21" to="assets/star45 21" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 22" to="assets/star45 22" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 23" to="assets/star45 23" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 15" to="assets/star46 15" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 24" to="assets/star45 24" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 16" to="assets/star46 16" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 25" to="assets/star45 25" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 26" to="assets/star45 26" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 17" to="assets/star46 17" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 18" to="assets/star46 18" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 19" to="assets/star46 19" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 27" to="assets/star45 27" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 28" to="assets/star45 28" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 29" to="assets/star45 29" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 30" to="assets/star45 30" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 20" to="assets/star46 20" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 21" to="assets/star46 21" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 31" to="assets/star45 31" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 32" to="assets/star45 32" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 33" to="assets/star45 33" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 22" to="assets/star46 22" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 23" to="assets/star46 23" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 34" to="assets/star45 34" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 24" to="assets/star46 24" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 35" to="assets/star45 35" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 25" to="assets/star46 25" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 26" to="assets/star46 26" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 36" to="assets/star45 36" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 37" to="assets/star45 37" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 38" to="assets/star45 38" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 27" to="assets/star46 27" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 28" to="assets/star46 28" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 29" to="assets/star46 29" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 39" to="assets/star45 39" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 40" to="assets/star45 40" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 41" to="assets/star45 41" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 42" to="assets/star45 42" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 30" to="assets/star46 30" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 31" to="assets/star46 31" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 32" to="assets/star46 32" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 33" to="assets/star46 33" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 34" to="assets/star46 34" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 35" to="assets/star46 35" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 43" to="assets/star45 43" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 44" to="assets/star45 44" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 45" to="assets/star45 45" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 36" to="assets/star46 36" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 37" to="assets/star46 37" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 46" to="assets/star45 46" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 47" to="assets/star45 47" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 48" to="assets/star45 48" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 49" to="assets/star45 49" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 38" to="assets/star46 38" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 39" to="assets/star46 39" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 50" to="assets/star45 50" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 40" to="assets/star46 40" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 51" to="assets/star45 51" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 41" to="assets/star46 41" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 42" to="assets/star46 42" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 52" to="assets/star45 52" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 53" to="assets/star45 53" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 43" to="assets/star46 43" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 54" to="assets/star45 54" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 44" to="assets/star46 44" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 55" to="assets/star45 55" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 56" to="assets/star45 56" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 57" to="assets/star45 57" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 45" to="assets/star46 45" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 46" to="assets/star46 46" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 58" to="assets/star45 58" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 59" to="assets/star45 59" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 47" to="assets/star46 47" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 48" to="assets/star46 48" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 49" to="assets/star46 49" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 50" to="assets/star46 50" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 60" to="assets/star45 60" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 51" to="assets/star46 51" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 52" to="assets/star46 52" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 53" to="assets/star46 53" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 54" to="assets/star46 54" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 61" to="assets/star45 61" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 55" to="assets/star46 55" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 56" to="assets/star46 56" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 57" to="assets/star46 57" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 58" to="assets/star46 58" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 59" to="assets/star46 59" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 60" to="assets/star46 60" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 62" to="assets/star45 62" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 63" to="assets/star45 63" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 61" to="assets/star46 61" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 64" to="assets/star45 64" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 62" to="assets/star46 62" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 65" to="assets/star45 65" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 66" to="assets/star45 66" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 63" to="assets/star46 63" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 67" to="assets/star45 67" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 68" to="assets/star45 68" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 69" to="assets/star45 69" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 70" to="assets/star45 70" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 64" to="assets/star46 64" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 65" to="assets/star46 65" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 71" to="assets/star45 71" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 66" to="assets/star46 66" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 72" to="assets/star45 72" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 67" to="assets/star46 67" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 68" to="assets/star46 68" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 69" to="assets/star46 69" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 70" to="assets/star46 70" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 73" to="assets/star45 73" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 71" to="assets/star46 71" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 72" to="assets/star46 72" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 74" to="assets/star45 74" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 73" to="assets/star46 73" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 75" to="assets/star45 75" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 74" to="assets/star46 74" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 75" to="assets/star46 75" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 76" to="assets/star45 76" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 76" to="assets/star46 76" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 77" to="assets/star46 77" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 77" to="assets/star45 77" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 78" to="assets/star45 78" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 79" to="assets/star45 79" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 78" to="assets/star46 78" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 80" to="assets/star45 80" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 81" to="assets/star45 81" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 79" to="assets/star46 79" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 82" to="assets/star45 82" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 80" to="assets/star46 80" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 81" to="assets/star46 81" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 82" to="assets/star46 82" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 83" to="assets/star46 83" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 83" to="assets/star45 83" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 84" to="assets/star46 84" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 85" to="assets/star46 85" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 84" to="assets/star45 84" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 86" to="assets/star46 86" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 85" to="assets/star45 85" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 86" to="assets/star45 86" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 87" to="assets/star46 87" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 87" to="assets/star45 87" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 88" to="assets/star46 88" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 88" to="assets/star45 88" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 89" to="assets/star45 89" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 90" to="assets/star45 90" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 91" to="assets/star45 91" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 89" to="assets/star46 89" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 92" to="assets/star45 92" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 90" to="assets/star46 90" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 93" to="assets/star45 93" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 91" to="assets/star46 91" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 94" to="assets/star45 94" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 95" to="assets/star45 95" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 92" to="assets/star46 92" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 93" to="assets/star46 93" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 96" to="assets/star45 96" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 97" to="assets/star45 97" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 94" to="assets/star46 94" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 95" to="assets/star46 95" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 96" to="assets/star46 96" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 98" to="assets/star45 98" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 99" to="assets/star45 99" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 100" to="assets/star45 100" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 97" to="assets/star46 97" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 101" to="assets/star45 101" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 98" to="assets/star46 98" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 102" to="assets/star45 102" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 103" to="assets/star45 103" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 99" to="assets/star46 99" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 104" to="assets/star45 104" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 105" to="assets/star45 105" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 100" to="assets/star46 100" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 106" to="assets/star45 106" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 107" to="assets/star45 107" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 101" to="assets/star46 101" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 108" to="assets/star45 108" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 109" to="assets/star45 109" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 102" to="assets/star46 102" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 110" to="assets/star45 110" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 103" to="assets/star46 103" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star46 104" to="assets/star46 104" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 111" to="assets/star45 111" method="_on_body_enter"]
+
+[connection signal="body_enter" from="assets/star45 112" to="assets/star45 112" method="_on_body_enter"]
 
 
